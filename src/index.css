@@ -11,16 +11,12 @@ h1 {
 
 /* HERO PAGE */
 
-.HeroPage .navbar1 {
-  margin-left: 100px;
-  margin-right: 30px;
-}
-
 .HeroPage nav a {
-  padding-left: 300px;
+  padding-left: 200px;
   text-decoration: none;
   color: rgb(221, 74, 135);
-  font-size: 20px
+  font-size: 20px;
+  cursor: pointer;
 }
 
 /* ABOUT US */
@@ -46,7 +42,7 @@ label {
   display: block;
   color: #02172C;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat;
   margin-top: 20px;
 }
 
@@ -60,7 +56,7 @@ input {
 textarea {
   margin-top: 30px;
   width: 550px;
-  height: 200px;
+  height: 149px;
   border-style: hidden;
   display: block;
 }
@@ -71,7 +67,8 @@ textarea {
   display: inline-block;
   color: white;
   width: 100%;
-  font-size: small;
+ 
+
 }
 
 .footer1 div {
@@ -88,6 +85,16 @@ textarea {
   padding-left: 20px;
 }
 
+.topbtn{
+position: fixed;
+right: 0;
+border-radius: 100%;
+color: black;
+background-color: white;
+
+
+}
+
 /* Media Queries for Responsiveness */
 
 /* Tablet */
@@ -97,6 +104,7 @@ textarea {
       margin-right: 20px;
       padding-left: 20px;
       padding-right: 20px;
+      display:block;
   }
 
   .HeroPage nav a {

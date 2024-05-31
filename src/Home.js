@@ -1,4 +1,5 @@
 import App from './App';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import milky1 from './MICKY 1.png';
 import milky2 from './MICKY 2.png';
 import bread from './bread.png';
@@ -18,20 +19,24 @@ import insta from './insta.png';
 import linkedin from './linkedin.png';
 import yt from './yt.png';
 import logo from './logo.png'
+import line from './line.png'
 
 const Home = () => {
     const year = new Date();
+    const top = () => {
+        window.scrollTo(0,0);
+    }
 
     const [names, setNames] = useState('');
     const [number, setNumber] = useState('');
     const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const [message, setMessage] = useState('I want to create a packaging for my product');
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
         // Construct the WhatsApp message URL
-        const phoneNumber = 'YOUR_WHATSAPP_NUMBERz'; // Replace with your WhatsApp number
+        const phoneNumber = '2348164784432'; // Replace with your WhatsApp number
         const whatsappMessage = `https://wa.me/${phoneNumber}?text=Name:%20${encodeURIComponent(names)}%0AEmail:%20${encodeURIComponent(email)}%0AMessage:%20${encodeURIComponent(message)}`;
         
         // Open WhatsApp with the pre-filled message
@@ -50,8 +55,8 @@ const Home = () => {
         return (
             <div style={{ paddingLeft: '50px', paddingTop: '70px' }}>
                 <form ref={form} onSubmit={sendEmail}>
-                    <label>Name</label>
-                    <input
+                    <label style={{paddingBottom: '10px'}}>Name</label>
+                    <input style={{fontSize: '20px'}}
                         name='from_name'
                         placeholder='Your full name'
                         type='text'
@@ -60,7 +65,7 @@ const Home = () => {
                         onChange={(e) => setNames(e.target.value)}
                     />
                     <label>Your message</label>
-                    <textarea
+                    <textarea style={{fontSize: '20px', padding: '20px 30px'}}
                         name='message'
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
@@ -68,16 +73,7 @@ const Home = () => {
                     <strong>
                         <button
                             style={{
-                                marginLeft: '50px',
-                                borderRadius: '10px',
-                                color: 'white',
-                                backgroundColor: '#1A618B',
-                                width: '200px',
-                                height: '5px',
-                                padding: '40px 40px',
-                                marginTop: '20px'
-                            }}
-                        >
+                                marginLeft: '1px', borderRadius: '10px', cursor: 'pointer',color: 'white',backgroundColor: '#1A618B', fontSize: '30px', fontWeight: '500px', width: '337px', height: '85px', paddingBottom: '8px', marginTop: '20px'}}>
                             Join us
                         </button>
                     </strong>
@@ -89,35 +85,44 @@ const Home = () => {
     return (
         <>
             {/* HEROPAGE */}
-            <div className='HeroPage' style={{ marginLeft: '100px', marginTop: '70px', paddingLeft: '100px', paddingRight: '180px' }}>
+            <div className='HeroPage' style={{ marginLeft: '150px', marginTop: '70px', paddingLeft: '200px', paddingRight: '180px' }}>
                 <nav className='navbar'>
                     <img src={milky1} alt="" />
                     <img src={milky2} alt="" />
-                    <nav className='navbar1' style={{ display: 'inline-block' }}>
+                    <nav className='navbar1' style={{ display: 'inline-block', marginLeft: '370px' }}>
                         <strong>
-                            <a href="">About</a>
-                            <a href="">Contact</a>
-                            <a href="">Our Products</a>
+                        <Link to="About" spy={true} smooth={true} offset={-30} duration={500}>About</Link>
+                        <Link to="Contact" spy={true} smooth={true} offset={-120} duration={500}>Contact</Link>
+                        <Link to="Our Product" spy={true} smooth={true} offset={-40} duration={500}>Our Product</Link>
                         </strong>
                     </nav>
                 </nav>
 
-                <div className='general' style={{ marginTop: '100px', float: 'right', marginRight: '50px' }}>
+                <div className='general' style={{ marginTop: '250px', float: 'right', marginRight: '50px' }}>
                     <div>
                         <img src={Frame1} alt="" />
                     </div>
                 </div>
-
-                <h1 style={{ paddingTop: '200px', color: '#1A618B', marginTop: '200px' }}>We promote <br />your brand <br /> with Stunning <br /><strong>Packaging</strong></h1>
-                <div style={{ marginTop: '200px', paddingLeft: '200px', display: 'inline-block' }} className='container1'>
+               
+                <h1 style={{ paddingTop: '200px', color: '#1A618B', marginTop: '290px' }}>We promote <br />your brand <br /> with Stunning <br /><span style={{fontWeight: '800px', fontSize: '80px'}}><strong>Packaging</strong></span></h1>
+                <div style={{ marginTop: '300px', paddingLeft: '550px', display: 'inline-block', paddingTop: '300px' }} className='container1'>
+                    
                 </div>
             </div>
 
-            {/* ABOUT MILKYPRINT */}
-            <div style={{ paddingTop: '200px', marginRight: '50px', color: '#1A618B', display: 'flex', paddingLeft: '150px', paddingRight: '50px', paddinTop: '50px' }} className='About'>
-                <img className='img1' style={{ height: '781px', width: '585px' }} src={paper} alt="" />
+            <div className='topbtn'>
+            <button onClick={top}>Top</button>
+            </div>
 
-                <p style={{color: '#666666', fontSize: '20px', lineHeight: '24px', paddingLeft: '200px' }}>
+            {/* ABOUT MILKYPRINT */}
+
+            <div style = {{marginTop: '0px'}} className='About' >
+            <strong><p style={{marginLeft: '1000px', fontWeight: '200px', fontStyle: 'inherit'}}>About Micky Prints</p> </strong>
+            </div>
+            <div style={{ paddingTop: '100px', marginRight: '50px', color: '#1A618B', display: 'flex', paddingLeft: '150px', paddingRight: '50px', paddingTop: '0px' }} className='About'>
+                <img className='img1' style={{ height: '840px', width: '585px' }} src={paper} alt="" />
+                <h1></h1>
+                <p style={{color: '#666666', fontSize: '20px', lineHeight: '24px', paddingLeft: '200px' }}> <strong><span style={{fontSize: '50px', color: '#1A618B', lineHeight: '60px'}}>Packaging at it’s <br />Finest <br /></span></strong> 
                     "At Micky's Prints, we believe that packaging is not just a means to deliver products; it's an opportunity to make a lasting impression. With years of experience and a dedicated team of experts, we've perfected the art of packaging to ensure that every box, bag, or label we create tells a story – your story.
                     <br />
                     <br />Our journey began with a simple idea: to empower businesses, big and small, with packaging solutions that reflect their values and aspirations. Today, we stand as industry leaders, driven by a passion for innovation and a commitment to excellence. What sets us apart? It's our unwavering dedication to quality, creativity, and sustainability. From the initial concept to the final product, we work closely with our clients to understand their unique needs and bring their vision to life. Whether it's a custom-designed box for a luxury brand or eco-friendly packaging for a conscious consumer, we have the expertise and resources to deliver beyond expectations
@@ -148,7 +153,7 @@ const Home = () => {
             </div>
 
             {/* PRODUCT */}
-            <div style={{ color: '#1A618B', paddingLeft: '40%', fontSize: '30px', fontWeight: '800px' }}>
+            <div className='Our Product' style={{ color: '#1A618B', paddingLeft: '40%', fontSize: '30px', fontWeight: '800px' }}>
                 <h2>OUR RECENT PRODUCT</h2>
             </div>
 
@@ -161,8 +166,8 @@ const Home = () => {
 
             {/* OUR CUSTOMER */}
             <div style={{ paddingLeft: '350px', height: '500px', paddingTop: '70px' }}>
-                <h2 style={{ fontSize: '16px' }}>Our Customer</h2>
-                <p>Providing for Nigeria’s packaging needs for many years has allowed
+                <h2 style={{ fontSize: '16px', paddingLeft: '500px' }}>Our Customer</h2>
+                <p style={{paddingLeft: '300px'}}>Providing for Nigeria’s packaging needs for many years has allowed <br />
                     us to gain the support of some truly wonderful customers.</p>
                 <img src={container} alt="" />
             </div>
@@ -170,10 +175,10 @@ const Home = () => {
 
 
         {/* CONTACT */}
-            <div className='contact' style={{ backgroundColor: '#EFDAD9', paddingTop: '10px', paddingLeft:'500px', height: '750px'}}>
+            <div className='Contact' style={{ backgroundColor: '#EFDAD9', paddingTop: '50px', paddingLeft:'500px', height: '750px'}}>
        <img style={{ width:'400px', height: '750px', float:'left', display: 'inline', paddingRight: '100px'}} src={boy} alt="" />
 
-            <h2 style={{color: '#E51A49', fontSize: '16px'}}>Contact us
+            <h2 style={{color: '#E51A49', fontSize: '20px'}}>Contact us
             </h2>
             <h2 style={{color: '#1A618B', fontSize: '36px'}}>Let's Talk Business!</h2>
             {Myform()};
@@ -184,7 +189,7 @@ const Home = () => {
         {/* INFO */}
         <div className="footer1" style={{fontSize: '20px'}}>
         
-        <div>
+        <div style={{paddingLeft: '200px'}}>
             <ul>
             <img style={{width: '200px', height:'50px', paddingTop: '30px'}} src={logo} alt="logo" />
                 <p>contact us if you have any question based <br />on partnership, sponsorship. Please contact us at <br /> info@mickyprint.com</p>
@@ -198,7 +203,7 @@ const Home = () => {
 
            </div>
         </div>
-        <div style={{paddingLeft: '700px', paddingTop: '100px'}}>
+        <div style={{paddingLeft: '500px', paddingTop: '100px'}}>
             <h3>Contact Information</h3>
             <p>Email info: firstplaceconect@gmail.com</p>
             <p>Phone: +2347041197027</p>
