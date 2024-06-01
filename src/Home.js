@@ -1,7 +1,6 @@
 import App from './App';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
-import milky1 from './MICKY 1.png';
-import milky2 from './MICKY 2.png';
+import micky from './micky.png';
 import bread from './bread.png';
 import paper from './paper.png';
 import tissue from './tissue.png';
@@ -87,8 +86,7 @@ const Home = () => {
             {/* HEROPAGE */}
             <div className='HeroPage' style={{ marginLeft: '150px', marginTop: '70px', paddingLeft: '200px', paddingRight: '180px' }}>
                 <nav className='navbar'>
-                    <img src={milky1} alt="" />
-                    <img src={milky2} alt="" />
+                    <img src={micky} alt="" />             
                     <nav className='navbar1' style={{ display: 'inline-block', marginLeft: '370px' }}>
                         <strong>
                         <Link to="About" spy={true} smooth={true} offset={-30} duration={500}>About</Link>
@@ -166,8 +164,8 @@ const Home = () => {
 
             {/* OUR CUSTOMER */}
             <div style={{ paddingLeft: '350px', height: '500px', paddingTop: '70px' }}>
-                <h2 style={{ fontSize: '16px', paddingLeft: '500px' }}>Our Customer</h2>
-                <p style={{paddingLeft: '300px'}}>Providing for Nigeria’s packaging needs for many years has allowed <br />
+                <h2 style={{ fontSize: '20px', paddingLeft: '500px' }}>Our Customer</h2>
+                <p style={{paddingRight: '400px', textAlign: 'center'}}>Providing for Nigeria’s packaging needs for many years has allowed <br />
                     us to gain the support of some truly wonderful customers.</p>
                 <img src={container} alt="" />
             </div>
