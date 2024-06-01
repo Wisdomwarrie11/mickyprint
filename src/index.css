@@ -2,9 +2,7 @@
 
 /* General Styles */
 
-
-@media  (min-width: 1025px) {
-  body {
+body {
     background-color: #FFF6F6;
     font-family: Montserrat;
   }
@@ -24,6 +22,13 @@
     font-size: 20px;
     cursor: pointer;
   }
+
+  .navbar-toggle {
+    display: none;
+    color: #f2f2f2;
+    font-size: 30px;
+    cursor: pointer;
+}
   
   /* ABOUT US */
   .general img {
@@ -98,141 +103,21 @@
   color: black;
   background-color: white;
   
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar1 a { 
+        float: none;
+        display: none;
+        text-align: left;
+    }
+    .navbar1.responsive {position: relative;}
+    .navbar1.responsive a {
+        display: block;
+        text-align: left;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+}
   
-  }
-  
-}
-
-
-
-/* Media Queries for Responsiveness */
-
-/* Tablet */
-@media (max-width: 768px) {
-  .HeroPage {
-      
-  }
-
-  .HeroPage nav a {
-      padding-left: 50px;
-  }
-
-  .HeroPage .navbar1 {
-      
-  }
-
-  .general {
-     
-  }
-
-  .About {
-      
-  }
-
-  .About img {
-     
-  }
-
-  .what-we-do {
-     
-  }
-
-  .what-we-do div {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-
-  input, textarea {
-      width: 100%;
-      padding: 10px;
-  }
-
-  .footer1 {
-      font-size: smaller;
-      text-align: center;
-  }
-
-  .footer1 div {
-      float: none;
-      padding: 20px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .HeroPage {
-      margin-left: 10px;
-      margin-right: 10px;
-      padding-left: 10px;
-      padding-right: 10px;
-  }
-
-  .HeroPage nav a {
-      padding-left: 20px;
-      font-size: 14px;
-  }
-
-  .HeroPage .navbar1 {
-      margin-left: 0;
-      margin-right: 0;
-      display: block;
-      text-align: center;
-  }
-
-  .general {
-      margin-top: 20px;
-      float: none;
-      margin-right: 0;
-      text-align: center;
-  }
-
-  .general img {
-      width: 100%;
-      height: auto;
-  }
-
-  .About {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .About img {
-      width: 100%;
-      height: auto;
-  }
-
-  .what-we-do {
-      height: auto;
-      padding: 10px;
-  }
-
-  .what-we-do div {
-      width: 100%;
-      margin-bottom: 10px;
-  }
-
-  .contact {
-      padding-left: 10px;
-      padding-right: 10px;
-  }
-
-  input, textarea {
-      width: 100%;
-      padding: 10px;
-  }
-
-  .footer1 {
-      font-size: smaller;
-      text-align: center;
-  }
-
-  .footer1 div {
-      float: none;
-      padding: 10px;
-  }
-
-  .footer1 img {
-      width: 50px;
-      height: auto;
-  }
-}

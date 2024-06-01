@@ -1,3 +1,4 @@
+
 import App from './App';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import micky from './micky.png';
@@ -29,7 +30,6 @@ const Home = () => {
     const [names, setNames] = useState('');
     const [number, setNumber] = useState('');
     const [email, setEmail] = useState('');
-    const [isResponsive, setIsResponsive] = useState(false);
     const [message, setMessage] = useState('I want to create a packaging for my product');
     const form = useRef();
 
@@ -49,10 +49,6 @@ const Home = () => {
             }, (error) => {
                 console.log(error.text);
             });
-    };
-
-    const toggleNavbar = () => {
-        setIsResponsive(!isResponsive);
     };
 
     const Myform = () => {
@@ -94,7 +90,6 @@ const Home = () => {
                     <img src={micky} alt="" />             
                     <nav className='navbar1' style={{ display: 'inline-block', marginLeft: '370px' }}>
                         <strong>
-                        <div className="navbar-toggle" onClick={toggleNavbar}>&#9776;</div>
                         <Link to="About" spy={true} smooth={true} offset={-30} duration={500}>About</Link>
                         <Link to="Contact" spy={true} smooth={true} offset={-120} duration={500}>Contact</Link>
                         <Link to="Our Product" spy={true} smooth={true} offset={-40} duration={500}>Our Product</Link>
