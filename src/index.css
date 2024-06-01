@@ -1,7 +1,7 @@
 /* General Styles */
 body {
   background-color: #FFF6F6;
-  font-family: 'Montserrat';
+  font-family: Georgia;
 }
 
 
@@ -10,6 +10,7 @@ h1 {
 }
 
 /* HERO PAGE */
+
 
 .HeroPage nav a {
   padding-left: 200px;

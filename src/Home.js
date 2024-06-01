@@ -205,9 +205,9 @@ const Home = () => {
         </div>
         <div style={{paddingLeft: '500px', paddingTop: '100px'}}>
             <h3>Contact Information</h3>
-            <p>Email info: firstplaceconect@gmail.com</p>
-            <p>Phone: +2347041197027</p>
-            <p>Address: </p>
+            <p>Email info: info@mickyprints.com</p>
+            <p>Phone: 08082346361, 08138148024, 08158470504</p>
+            <p>Address: 22 Cameroon Road Aba, Abia State, Nigeria. </p>
         </div>
         </div>
 
