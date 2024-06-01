@@ -156,7 +156,7 @@ const Home = () => {
             </div>
 
             {/* PACKAGING DESIGN */}
-            <div style={{ backgroundColor: '#C4C6DB', paddingLeft: '50px', paddingTop: '10px', textAlign: 'center', fontSize: '21px', height: '700px' }}>
+            <div style={{ backgroundColor: '#C4C6DB', paddingLeft: '50px', paddingTop: '10px', textAlign: 'center', fontSize: '21px', height: '700px', width: '100%', display: 'inline-block'}}>
                 <strong><h2 style={{ color: '#000000', fontWeight: '1000px' }}>Stunning Packaging Design</h2></strong>
                 <p>Our stunning packaging design services are tailored to elevate your products and captivate <br />consumers' attention. We specialize in creating visually striking packaging that stands out on the <br /> shelves and leaves a lasting impression.</p>
                 <img src={Frame} alt="" />
