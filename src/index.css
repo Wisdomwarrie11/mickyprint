@@ -1,4 +1,4 @@
-@media screen and (min-width: 992px){
+
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* General Styles */
@@ -371,6 +371,13 @@ body {
   background-color: white;
 
   }
-}
+
 
 /* FOR LARGER  */
+@media (min-width: 992px){
+  .HeroPage{
+    margin-left: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
