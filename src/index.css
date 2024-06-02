@@ -376,7 +376,7 @@
 
 
 /* FOR LARGER  */
-@media (min-width: 1300px){
+@media (max-width: 1300px){
 
   body{
     background-color: blue;
