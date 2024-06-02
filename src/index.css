@@ -376,7 +376,7 @@
 
 
 /* FOR LARGER  */
-@media (max-width: 1300px){
+@media (min-width: 1921px){
 
   body{
     background-color: blue;
@@ -392,4 +392,11 @@
     padding-left: 100px;
   }
 
+}
+
+@media (max-width: 480px){
+body{
+  background-color: red;
+}
+  
 }
