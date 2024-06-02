@@ -383,7 +383,7 @@
   }
 
   .HeroPage{
-    margin-left: 100px;
+    margin-left: 80px;
     padding-left: 100px;
     padding-right: 50px;
   }
@@ -391,5 +391,9 @@
   .HeroPage nav a{
     padding-left: 100px;
   }
+
+.heading{
+  padding-left: ;
+}
 
 }
