@@ -89,7 +89,8 @@ const Home = () => {
     return (
         <>
             {/* HEROPAGE */}
-            <div className='HeroPage' st>
+           <div className='container'>
+           <div className='HeroPage'>
                 <nav className='navbar'>
                     <img src={micky} alt="" />             
                     <nav className='navbar1'>
@@ -102,9 +103,7 @@ const Home = () => {
                 </nav>
 
                 <div className='general'>
-                    <div>
                         <img src={Frame1} alt="" />
-                    </div>
                 </div>
                
                 <h1 className='heading'>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
@@ -112,6 +111,7 @@ const Home = () => {
                     
                 </div>
             </div>
+           
 
             <div className='topbtn'>
             <button onClick={top}>Top</button>
@@ -119,7 +119,8 @@ const Home = () => {
 
             {/* ABOUT MILKYPRINT */}
 
-            <div className='About' >
+           <div className='about-container' style={{margin: 'auto', width: '100%', display: 'inline-block', padding: 'auto'}}>
+           <div className='About' >
             <strong><p>About Micky Prints</p> </strong>
             </div>
             <div className='About1'>
@@ -137,6 +138,7 @@ const Home = () => {
                     </div>
                 </p>
             </div>
+           </div>
 
             {/* WHAT WE DO */}
             <div className='what-we-do'>
@@ -217,6 +219,7 @@ const Home = () => {
         {/* FOOTER */}
         <div className='footer2'>
             <p>copyright @{year.getFullYear()} Mickyprint All right Reserved. <span>Terms of Use. Privacy Policy</span></p>
+        </div>
         </div>
    </>
     )

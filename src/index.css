@@ -372,7 +372,6 @@
     border-radius: 100%;
     color: black;
     background-color: white;
-  
     }
 
 
@@ -384,20 +383,17 @@
   }
 
   .HeroPage{
-    margin-left: 100px;
+    margin-left: 50px;
     padding-left: 50px;
-    padding-right: 100px;
-  }
-
-  .HeroPage{
-    margin-left: 100px;
-    padding-left: 100px;
     padding-right: 50px;
   }
 
   .HeroPage nav a{
-    padding-left: 100px;
-    color: blue;
+    padding-left: 50px;
+  }
+
+  .general{
+    padding-left: 20px;
   }
 
 }
