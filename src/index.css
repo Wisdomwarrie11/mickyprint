@@ -376,10 +376,16 @@
 
 
 /* FOR LARGER  */
-@media (min-width: 1921px){
+@media (min-width: 2000px){
 
   body{
-    background-color: blue;
+    background-color: green;
+  }
+
+  .HeroPage{
+    margin-left: 100px;
+    padding-left: 50px;
+    padding-right: 100px;
   }
 
   .HeroPage{
@@ -390,6 +396,7 @@
 
   .HeroPage nav a{
     padding-left: 100px;
+    color: blue;
   }
 
 }
