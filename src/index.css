@@ -1,5 +1,5 @@
 
- @media(max-width: 1300px){
+ @media(min-width: 1300px){
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
   /* General Styles */
