@@ -374,7 +374,7 @@ body {
 
 
 /* FOR LARGER  */
-@media (max-width: 1024px){
+@media (min-width: 1200px){
 
   body{
     background-color: blue;
