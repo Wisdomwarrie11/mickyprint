@@ -89,7 +89,7 @@ const Home = () => {
     return (
         <>
             {/* HEROPAGE */}
-            <div className='HeroPage'>
+            <div className='HeroPage' st>
                 <nav className='navbar'>
                     <img src={micky} alt="" />             
                     <nav className='navbar1'>
