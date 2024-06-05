@@ -19,6 +19,7 @@ import linkedin from './linkedin.png';
 import yt from './yt.png';
 import logo from './logo.png'
 import line from './line.png'
+import Navbar from './Navbar';
 
 const Home = () => {
     const year = new Date();
@@ -57,6 +58,8 @@ const Home = () => {
 
     const Myform = () => {
         return (
+            
+
             <div style={{ paddingLeft: '50px', paddingTop: '70px' }}>
                 <form ref={form} onSubmit={sendEmail}>
                     <label style={{paddingBottom: '10px'}}>Name</label>
@@ -86,120 +89,135 @@ const Home = () => {
         );
     };
 
-    return (
-        <>
-            {/* HEROPAGE */}
-           <div className='container'>
-           <div className='HeroPage'>
-                <nav className='navbar'>
-                    <img src={micky} alt="" />             
-                    <nav className='navbar1'>
-                        <strong>
-                        <Link to="About" spy={true} smooth={true} offset={-30} duration={500}>About</Link>
-                        <Link to="Contact" spy={true} smooth={true} offset={-120} duration={500}>Contact</Link>
-                        <Link to="Our Product" spy={true} smooth={true} offset={-40} duration={500}>Our Product</Link>
-                        </strong>
-                    </nav>
-                </nav>
+    return(
+      <>
+     <div className="container-lg justify-content-center" style={{backgroundColor: '#FFF6F6', paddingTop: '50px'}}>
+     <div className='my-5'>
+     <div className="row align-items-center">
+            <div className="col-md-5">
+            <h1 style={{paddingLeft: '80px', fontSize: '50px', color: '#1A618B'}}>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
+            </div>
+            <div className="col-md-5 d-md-block">
+                <img className= 'img-fluid' src={Frame1} alt="" />
+            </div>
+        </div>
+     </div>
+       
 
-                <div className='general'>
-                        <img src={Frame1} alt="" />
+        {/* ABOUT PAGE */}
+            <div id='about' className="row" style={{marginTop: '250px'}}>
+                
+            <div className="col-md-6 d-md-block" >
+                    <img style={{maxHeight: '700px', maxWidth: '700px'}} src={paper} alt="" />
                 </div>
-               
-                <h1 className='heading'>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
-                <div className='container1'>
-                    
+                {/* <div className="col">
+                    <h2>About Micky Prints</h2>
+                </div> */}
+                <div className='col-sm-6'>
+                <div className="col text-center">
+                    <p>About MickyPrint</p>
                 </div>
-            </div>
-           
-
-            <div className='topbtn'>
-            <button onClick={top}>Top</button>
-            </div>
-
-            {/* ABOUT MILKYPRINT */}
-
-           <div className='about-container' style={{margin: 'auto', width: '100%', display: 'inline-block', padding: 'auto'}}>
-           <div className='About' >
-            <strong><p>About Micky Prints</p> </strong>
-            </div>
-            <div className='About1'>
-                <img className='img1'src={paper} alt="" />
-                <h1></h1>
-                <p className='about-content'> <strong><span>Packaging at it’s <br />Finest <br /></span></strong> 
-                    "At Micky's Prints, we believe that packaging is not just a means to deliver products; it's an opportunity to make a lasting impression. With years of experience and a dedicated team of experts, we've perfected the art of packaging to ensure that every box, bag, or label we create tells a story – your story.
+                    <strong><h1 className='fw-2' style={{color:'#1A618B'}}>Packaging at it’s <br />Finest <br /></h1></strong>
+                    <p style={{paddingRight: '100px'}}>
+                    "At Micky's Prints, we believe that packaging is not just a means 
+                    to deliver products; it's an opportunity to make a lasting impression. 
+                    With years of experience and a dedicated team of experts, 
+                    we've perfected the art of packaging to ensure that every box, bag, 
+                    or label we create tells a story – your story.
                     <br />
-                    <br />Our journey began with a simple idea: to empower businesses, big and small, with packaging solutions that reflect their values and aspirations. Today, we stand as industry leaders, driven by a passion for innovation and a commitment to excellence. What sets us apart? It's our unwavering dedication to quality, creativity, and sustainability. From the initial concept to the final product, we work closely with our clients to understand their unique needs and bring their vision to life. Whether it's a custom-designed box for a luxury brand or eco-friendly packaging for a conscious consumer, we have the expertise and resources to deliver beyond expectations
+                    Our journey began with a simple idea: to empower businesses, big and 
+                    small, with packaging solutions that reflect their values and aspirations.
+                    Today, we stand as industry leaders, driven by a passion for innovation 
+                    and a commitment to excellence.
+                    What sets us apart? It's our unwavering dedication to quality, creativity, 
+                    and sustainability. From the initial concept to the final product, 
+                    we work closely with our clients to understand their unique needs and 
+                    bring their vision to life. Whether it's a custom-designed box for a luxury 
+                    brand or eco-friendly packaging for a conscious consumer, we have the 
+                    expertise and resources to deliver beyond expectations.
                     <br />
-                    <br />So, whether you're launching a new product, expanding your brand, or reimagining your packaging strategy, let Micky's Prints be your trusted partner on this exciting journey. Together, we'll create packaging solutions that not only protect your products but also elevate your brand presence and leave a lasting impression on the world. Welcome to Micky's Prints – where packaging meets perfection, and dreams become reality."
-                    <div  className='experience' >
-                        <h3 >6+</h3>
-                        <p >Years <br />in Packaging Solutions</p>
-                    </div>
-                </p>
-            </div>
-           </div>
+                    So, whether you're launching a new product, expanding your brand, 
+                    or reimagining your packaging strategy, let Micky's Prints be your trusted 
+                    partner on this exciting journey. 
+                    Welcome to Micky's Prints – where packaging meets perfection, 
+                    and dreams become reality."
 
-            {/* WHAT WE DO */}
-            <div className='what-we-do'>
-                <h2 className='we-do-heading'>WHAT WE DO</h2>
-                <div className='section1'>
-                    <h2>Rubber Stereo Services</h2>
-                    <p>Rubber stereo printing involves using a <br /> rubber plate, known as a rubber stereo, to <br />create impressions on various surfaces. The <br />rubber stereo contains the raised design or <br /> text to be printed. When ink is applied to the rubber stereo and <br />pressed onto the surface, it transfers the design, creating clear and precise prints.</p>
-                </div>
-                <div className='section2'>
-                    <h2>Cylinder Mode</h2>
+                    </p>
+            </div>  
+        </div>
+
+        {/* WHAT WE DO */}
+        <div className="row" style={{padding: '100px 50px', backgroundColor: '#1A618B', color: '#FFFFFF'}}>
+            <div className="col text-center">
+            <h2 className = 'fw-bold' style={{color: '#EFDAD9'}}>WHAT WE DO</h2>
+            </div>
+            <div className="row justify-content-md-center sm-text-center" style={{paddingTop: '50px'}}>
+            <div className="col-md-4">
+            <h2>Rubber Stereo Services</h2>
+            <p>Rubber stereo printing involves using a rubber plate, known as a rubber stereo, to <br />create impressions on various surfaces. The rubber stereo contains the raised design or text to be printed. When ink is applied to the rubber stereo and pressed onto the surface, it transfers the design, creating clear and precise prints.</p>
+            </div>
+            <div className="col-md-4">
+            <h2>Cylinder Mode</h2>
                     <p>Cylinder mode printing, also known as rotary printing, involves wrapping the design around a cylinder, which then transfers the image onto the material as it moves through the press. This technique is ideal for large-scale, continuous printing tasks.</p>
+                
                 </div>
-                <div className='section3'>
-                    <h2>BOPP Matrial Printing</h2>
+                <div className="col-md-4">
+                <h2>BOPP Matrial Printing</h2>
                     <p>BOPP packaging involves using Biaxially Oriented Polypropylene material to create packaging solutions such as bags, labels, wraps, and pouches. BOPP films are widely used in the packaging industry due to their excellent printability, clarity, and barrier properties.</p>
                 </div>
             </div>
+        </div>
 
-            {/* PRODUCT */}
-            <div className='Our-Product'>
-                <h2>OUR RECENT PRODUCT</h2>
-            </div>
+        {/* PRODUCT */}
+        <div id='product' className="row text-center" style={{paddingTop: '50px'}}>
+        <h2 className = 'fw-bold' style={{color: '#1A618B'}}>OUR RECENT PRODUCT</h2>
+        </div>
 
-            {/* PACKAGING DESIGN */}
-            <div className='packaging'>
-                <strong><h2>Stunning Packaging Design</h2></strong>
+        {/* PACKAGING DESIGN */}
+        
+       <div className="row" style={{backgroundColor: '#C4C6DB', paddingTop: '30px'}}>
+       <div className="row">
+            <div className="col text-center">
+            <strong><h2 className = 'fw-bold' >Stunning Packaging Design</h2></strong>
                 <p>Our stunning packaging design services are tailored to elevate your products and captivate <br />consumers' attention. We specialize in creating visually striking packaging that stands out on the <br /> shelves and leaves a lasting impression.</p>
-                <img src={Frame} alt="" />
             </div>
+        </div>
+        <div className="col text-center ">
+            <img  style={{minWidth: '500px'}} src={Frame} alt="" />
+        </div>
+       </div>
 
-            {/* OUR CUSTOMER */}
-            <div className='customer' style={{ paddingLeft: '350px', height: '500px', paddingTop: '70px' }}>
-                <h2 style={{ fontSize: '20px', paddingLeft: '500px' }}>Our Customer</h2>
-                <p style={{paddingRight: '400px', textAlign: 'center'}}>Providing for Nigeria’s packaging needs for many years has allowed <br />
-                    us to gain the support of some truly wonderful customers.</p>
-                <img src={container} alt="" />
-            </div>
+       {/* OUR CUSTOMER */}
+       <div className="row text-center" style={{paddingTop: '50px'}}>
+        <div className="col">
+        <h2 style={{ fontSize: '40px'}}>Our Customers</h2>
+        <p>Providing for Nigeria’s packaging needs for many years has allowed <br />
+        us to gain the support of some truly wonderful customers.</p>
+        </div>
+         <img src={container} alt="" />
+       </div>
 
-
-
-        {/* CONTACT */}
-            <div className='Contact'>
-       <img src={boy} alt="" />
-
-            <h2>Contact us
+       {/* CONTACT */}
+       <div id='contact' className="row" style={{paddingTop: '100px', paddingLeft: '100px', backgroundColor: '#EFDAD9', marginTop: '150px'}}>
+        <div className="col-md-3">
+        <img className='img-fluid' src={boy} alt="" />
+        </div>
+        <div className='col-md-9'>
+        <h2>Contact us
             </h2>
             <h2 className='contact-bus'>Let's Talk Business!</h2>
             {Myform()};
-            
         </div>
+       </div>
 
-
-        {/* INFO */}
-        <div className="footer1">
-        
-        <div className='socials'>
-            <ul>
-            <img src={logo} alt="logo" />
+       {/* INFO */}
+       <div className="row" style={{paddingTop: '50px', paddingBottom: '50px', backgroundColor: '#1A618B', color: 'white' }}>
+        <div className="col-md-8">
+        <ul>
+            <img  src={logo} alt="logo" />
                 <p>contact us if you have any question based <br />on partnership, sponsorship. Please contact us at <br /> info@mickyprint.com</p>
             </ul>
-           <div style={{}}>
+           <div className='socials' style={{paddingLeft: '50px'}}>
            <a href=""><img src= {fb} alt="" /></a>
            <a href=""><img src= {insta} alt="" /></a>
            <a href=""><img src={linkedin} alt="" /></a>
@@ -207,22 +225,30 @@ const Home = () => {
            <a href=""><img src={x} alt="" /></a>
 
            </div>
+          
         </div>
-        <div className='info'>
+        <div className='col-md-4'>
             <h3>Contact Information</h3>
             <p>Email info: info@mickyprints.com</p>
             <p>Phone: 08082346361, 08138148024, 08158470504</p>
             <p>Address: 22 Cameroon Road Aba, Abia State, Nigeria. </p>
         </div>
-        </div>
-
+       </div>
         {/* FOOTER */}
-        <div className='footer2'>
+       <div className="row">
+       <div className='col text-center' style={{paddingTop: '20px',backgroundColor: '#e51a49', color: 'white'}}>
             <p>copyright @{year.getFullYear()} Mickyprint All right Reserved. <span>Terms of Use. Privacy Policy</span></p>
         </div>
-        </div>
-   </>
-    )
-};
+       </div>
 
-export default Home
+
+
+
+
+     </div>
+      </>
+
+    )
+  };
+
+    export default Home
