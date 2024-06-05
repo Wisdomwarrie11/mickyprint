@@ -91,7 +91,7 @@ const Home = () => {
 
     return(
       <>
-     <div className="container-lg justify-content-center" style={{backgroundColor: '#FFF6F6', paddingTop: '50px'}}>
+     <div className="container justify-content-center" style={{backgroundColor: '#FFF6F6', paddingTop: '50px'}}>
      <div className='my-5'>
      <div className="row align-items-center">
             <div className="col-md-5">
