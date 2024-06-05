@@ -1,0 +1,420 @@
+/* General Styles */
+body {
+  background-color: #FFF6F6;
+  font-family:Georgia,;
+}
+
+/* External Styles */
+.HeroPage {
+  margin-left: 150px;
+  margin-top: 70px;
+  padding-left: 200px;
+  padding-right: 180px;
+  justify-content: center;
+}
+
+.container{
+  flex-wrap: wrap;
+}
+
+/* NAVBAR */
+.HeroPage nav a {
+  padding-left: 200px;
+  text-decoration: none;
+  color: rgb(221, 74, 135);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar-toggle {
+  display: none;
+  color: #f2f2f2;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navbar1 {
+  display: inline-block;
+  margin-left: 370px;
+}
+
+.general1 {
+  margin-top: 250px;
+  float: right;
+}
+
+.heading {
+  padding-top: 200px;
+  color: #1A618B;
+  margin-top: 290px;
+}
+
+.heading span {
+  font-weight: 800px;
+  font-size: 80px;
+}
+
+/* ABOUT PAGE */
+.About p {
+  margin-left: 1000px;
+  font-weight: 200px;
+  font-style: inherit;
+}
+
+.About1 {
+  padding-top: 100px;
+  margin-right: 50px;
+  color: #1A618B;
+  display: flex;
+  padding-left: 50px;
+  padding-top: 0px;
+}
+
+.About1 .img1 {
+  height: 840px;
+  width: 585px;
+}
+
+.about-content {
+  color: #666666;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 200px;
+}
+
+.about-content span {
+  font-size: 50px;
+  color: #1A618B;
+  line-height: 60px;
+}
+
+.expereince {
+  display: flex;
+  color: black;
+  padding-left: 250px;
+}
+
+.experience h3 {
+  font-size: 49px;
+  line-height: 78px;
+}
+
+.experience p {
+  padding-top: 50px;
+  padding-left: 5px;
+}
+
+/* WHAT WE DO */
+.what-we-do {
+  padding-top: 120px;
+  padding-left: 300px;
+  color: #FFFFFF;
+  font-weight: 500px;
+  font-size: 20px;
+  line-height: 24px;
+  display: inline-block;
+  background-color: #1A618B;
+  width: 100%;
+  height: 543px;
+}
+
+.what-we-do .we-do-heading {
+  font-size: 36px;
+  padding-left: 550px;
+  font-weight: 800px;
+  color: #EFDAD9;
+}
+
+.section1 {
+  padding-left: 30px;
+  width: 450px;
+  height: 168px;
+  float: left;
+}
+
+.section2 {
+  padding-left: 30px;
+  width: 374px;
+  height: 168px;
+  float: left;
+}
+
+.section3 {
+  padding-left: 30px;
+  width: 374px;
+  height: 168px;
+  float: left;
+}
+
+/* PRODUCT */
+.Our-Product {
+  color: #1A6168;
+  padding-left: 700px;
+  font-size: 30px;
+  font-weight: 800px;
+}
+
+/* PACKAGING */
+.packaging {
+  background-color: #C4C6DB;
+  padding-left: 50px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 21px;
+  height: 700px;
+  width: 100%;
+  display: inline-block;
+}
+
+.packaging h2 {
+  color: #000000;
+  font-weight: 1000px;
+}
+
+/* OUR CUSTOMER */
+.customer {
+  padding-left: 350px;
+  height: 500px;
+  padding-top: 70px;
+}
+
+.customer h2 {
+  font-size: 20px;
+  padding-left: 500px;
+  padding-top: 70px;
+}
+
+.customer p {
+  padding-right: 400px;
+  text-align: center;
+}
+
+/* CONTACT */
+.Contact {
+  background-color: #EFDAD9;
+  padding-top: 50px;
+  padding-left: 500px;
+  height: 750px;
+}
+
+.Contact img {
+  max-width: 400px;
+  max-height: 750px;
+  float: left;
+  display: inline;
+  padding-right: 100px;
+}
+
+.Contact h2 {
+  color: #e51a49;
+  font-size: 20px;
+}
+
+.contact-bus {
+  color: #1A618B;
+  font-size: 36px;
+}
+
+.navbar1 {
+  display: inline-block;
+  margin-left: 370px;
+}
+
+/* INFO */
+.footer1 {
+  font-size: 20px;
+  background-color: #1A618B;
+  display: inline-block;
+  color: white;
+  width: 100%;
+}
+
+.footer1 div {
+  float: left;
+  padding: 60px;
+}
+
+.footer1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.socials {
+  padding-left: 200px;
+}
+
+.socials ul img {
+  max-width: 200px;
+  max-height: 50px;
+  padding-top: 30px;
+}
+
+.socials img {
+  padding-left: 20px;
+}
+
+.info {
+  padding-left: 500px;
+  padding-top: 100px;
+}
+
+/* FOOTER */
+.footer2 {
+  background-color: #e51a49;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  color: white;
+  padding-bottom: 20px;
+  padding-left: 250px;
+  font-weight: 800px;
+  min-height: 100px;
+}
+
+.footer2 p {
+  font-size: 20px;
+}
+
+.footer2 span {
+  padding-left: 500px;
+  font-size: 20px;
+}
+
+.general {
+  margin-top: 250px;
+  float: right;
+}
+
+.hero-heading {
+  padding-top: 200px;
+  color: #1A618B;
+  margin-top: 290px;
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.container1 {
+  margin-top: 300px;
+  padding-left: 550px;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 350%;
+}
+
+/* Form */
+label {
+  display: block;
+  color: #02172C;
+  font-weight: bold;
+  font-family: Montserrat;
+  margin-top: 20px;
+}
+
+input {
+  min-width: 470px;
+  min-height: 10px;
+  border-style: hidden;
+  padding: 40px 40px;
+}
+
+textarea {
+  margin-top: 30px;
+  min-width: 550px;
+  min-height: 149px;
+  border-style: hidden;
+  display: block;
+}
+
+.topbtn {
+  position: fixed;
+  right: 0;
+  border-radius: 100%;
+  color: black;
+  background-color: white;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .HeroPage, .About1, .packaging, .Contact, .footer1 .info {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  .navbar1 {
+      margin-left: 0;
+      text-align: center;
+  }
+  .about-content {
+      padding-left: 20px;
+  }
+  .customer {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  .contact-bus, .footer1, .footer2 {
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .HeroPage {
+      margin-left: 0;
+      margin-top: 0;
+      padding: 0 20px;
+  }
+  .heading {
+      font-size: 40px;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar1 {
+      display: none;
+  }
+  .about-content {
+      padding-left: 10px;
+      font-size: 16px;
+  }
+  .section1, .section2, .section3 {
+      width: 100%;
+      float: none;
+      padding-left: 0;
+  }
+  .what-we-do {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  .Our-Product, .footer2 p {
+      padding-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+      font-size: 30px;
+  }
+  .about-content span {
+      font-size: 30px;
+  }
+  .Contact img {
+      display: none;
+  }
+  .contact-bus {
+      font-size: 24px;
+  }
+  .info {
+      padding-left: 20px;
+      padding-top: 20px;
+  }
+  .footer2 p {
+      font-size: 16px;
+  }
+  .footer2 span {
+      display: block;
+      padding-left: 0;
+  }
+  label, input, textarea {
+      width: 100%;
+  }
+}
