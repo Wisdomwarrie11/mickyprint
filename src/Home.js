@@ -87,7 +87,7 @@ const Home = () => {
       <>
        <Navbar/>
 
-     <div className="container-sm text" style={{backgroundColor: '#FFF6F6', paddingTop: '50px'}}>
+     <div className="container-lg" style={{backgroundColor: '#FFF6F6', paddingTop: '50px'}}>
      <div className='my-5'>
      <div className="row justify-content-center">
             <div className="col-md-5 text-center text-md-start">
