@@ -87,7 +87,7 @@ const Home = () => {
       <>
        <Navbar/>
 
-     <div className="container-lg" style={{backgroundColor: '#FFF6F6', paddingTop: '50px'}}>
+     <div className="container-fluid" style={{backgroundColor: '#FFF6F6', paddingTop: '50px'}}>
      <div className='my-5'>
      <div className="row justify-content-center">
             <div className="col-md-5 text-center text-md-start">
@@ -203,7 +203,7 @@ const Home = () => {
         <div className="col-md-3">
         <img className='img-fluid' src={boy} alt="" />
         </div>
-        <div className='col-md-9'>
+        <div className='col-md-6'>
         <h2>Contact us
             </h2>
             <h2 className='contact-bus'>Let's Talk Business!</h2>
