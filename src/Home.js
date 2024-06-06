@@ -105,7 +105,7 @@ const Home = () => {
            <div id='about' className="row" style={{marginTop: '250px'}}>
                 
                 <div className="col-md-6 d-md-block" >
-                        <img style={{maxHeight: '700px', maxWidth: '700px'}} src={paper} alt="" />
+                        <img className='img-fluid' src={paper} alt="" />
                     </div>
                     {/* <div className="col">
                         <h2>About Micky Prints</h2>
@@ -182,7 +182,7 @@ const Home = () => {
             </div>
         </div>
         <div className="col text-center ">
-            <img  style={{maxWidth: '400px'}} src={Frame} alt="" />
+            <img  className='img-fluid' style={{maxWidth: '400px'}} src={Frame} alt="" />
         </div>
        </div>
      </div>
