@@ -199,7 +199,7 @@ const Home = () => {
 
        {/* CONTACT */}
        
-       <div id='contact' className="row" style={{paddingTop: '100px', paddingLeft: '100px', backgroundColor: '#EFDAD9', marginTop: '150px'}}>
+       <div id='contact' className="row" style={{paddingTop: '100px',backgroundColor: '#EFDAD9', marginTop: '150px'}}>
         <div className="col-md-3">
         <img className='img-fluid' src={boy} alt="" />
         </div>
