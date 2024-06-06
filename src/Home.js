@@ -101,7 +101,7 @@ const Home = () => {
        
 
         {/* ABOUT PAGE */}
-           <div className="container">
+           <div className="container-fluid">
            <div id='about' className="row" style={{marginTop: '250px'}}>
                 
                 <div className="col-md-6 d-md-block" >
@@ -173,7 +173,7 @@ const Home = () => {
 
         {/* PACKAGING DESIGN */}
         
-     <div className="container">
+     <div className="container-fluid">
      <div className="row" style={{backgroundColor: '#C4C6DB', paddingTop: '30px'}}>
        <div className="row">
             <div className="col text-center">
