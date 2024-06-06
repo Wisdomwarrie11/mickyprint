@@ -6,7 +6,7 @@ import micky from './micky.png';
 const Navbar = () =>{
     return(
         <>
-    <nav class=" navbar fixed-top navbar-expand-md navbar-light bg-light">
+    <nav class=" navbar fixed-top navbar-expand-md bg-light">
   <div class="container-xxl">
     <a class="navbar-brand" href="#intro">
         <img src={micky} alt="" />

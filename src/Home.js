@@ -52,14 +52,8 @@ const Home = () => {
             });
     };
 
-    const toggleNavbar = () => {
-        setIsResponsive(!isResponsive);
-    };
-
     const Myform = () => {
         return (
-            
-
             <div style={{ paddingLeft: '50px', paddingTop: '70px' }}>
                 <form ref={form} onSubmit={sendEmail}>
                     <label style={{paddingBottom: '10px'}}>Name</label>
@@ -91,10 +85,12 @@ const Home = () => {
 
     return(
       <>
-     <div className="container-fluid justify-content-center" style={{backgroundColor: '#FFF6F6', paddingTop: '50px'}}>
+       <Navbar/>
+
+     <div className="container-sm text" style={{backgroundColor: '#FFF6F6', paddingTop: '50px'}}>
      <div className='my-5'>
-     <div className="row align-items-center">
-            <div className="col-md-5">
+     <div className="row justify-content-center">
+            <div className="col-md-5 text-center text-md-start">
             <h1 style={{paddingLeft: '80px', fontSize: '50px', color: '#1A618B'}}>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
             </div>
             <div className="col-md-5 d-md-block">
@@ -105,46 +101,48 @@ const Home = () => {
        
 
         {/* ABOUT PAGE */}
-            <div id='about' className="row" style={{marginTop: '250px'}}>
+           <div className="container">
+           <div id='about' className="row" style={{marginTop: '250px'}}>
                 
-            <div className="col-md-6 d-md-block" >
-                    <img style={{maxHeight: '700px', maxWidth: '700px'}} src={paper} alt="" />
-                </div>
-                {/* <div className="col">
-                    <h2>About Micky Prints</h2>
-                </div> */}
-                <div className='col-sm-6'>
-                <div className="col text-center">
-                    <p>About MickyPrint</p>
-                </div>
-                    <strong><h1 className='fw-2' style={{color:'#1A618B'}}>Packaging at it’s <br />Finest <br /></h1></strong>
-                    <p style={{paddingRight: '100px'}}>
-                    "At Micky's Prints, we believe that packaging is not just a means 
-                    to deliver products; it's an opportunity to make a lasting impression. 
-                    With years of experience and a dedicated team of experts, 
-                    we've perfected the art of packaging to ensure that every box, bag, 
-                    or label we create tells a story – your story.
-                    <br />
-                    Our journey began with a simple idea: to empower businesses, big and 
-                    small, with packaging solutions that reflect their values and aspirations.
-                    Today, we stand as industry leaders, driven by a passion for innovation 
-                    and a commitment to excellence.
-                    What sets us apart? It's our unwavering dedication to quality, creativity, 
-                    and sustainability. From the initial concept to the final product, 
-                    we work closely with our clients to understand their unique needs and 
-                    bring their vision to life. Whether it's a custom-designed box for a luxury 
-                    brand or eco-friendly packaging for a conscious consumer, we have the 
-                    expertise and resources to deliver beyond expectations.
-                    <br />
-                    So, whether you're launching a new product, expanding your brand, 
-                    or reimagining your packaging strategy, let Micky's Prints be your trusted 
-                    partner on this exciting journey. 
-                    Welcome to Micky's Prints – where packaging meets perfection, 
-                    and dreams become reality."
-
-                    </p>
-            </div>  
-        </div>
+                <div className="col-md-6 d-md-block" >
+                        <img style={{maxHeight: '700px', maxWidth: '700px'}} src={paper} alt="" />
+                    </div>
+                    {/* <div className="col">
+                        <h2>About Micky Prints</h2>
+                    </div> */}
+                    <div className='col-sm-6'>
+                    <div className="col text-center">
+                        <p>About MickyPrint</p>
+                    </div>
+                        <strong><h1 className='fw-2' style={{color:'#1A618B'}}>Packaging at it’s <br />Finest <br /></h1></strong>
+                        <p style={{}}>
+                        "At Micky's Prints, we believe that packaging is not just a means 
+                        to deliver products; it's an opportunity to make a lasting impression. 
+                        With years of experience and a dedicated team of experts, 
+                        we've perfected the art of packaging to ensure that every box, bag, 
+                        or label we create tells a story – your story.
+                        <br />
+                        Our journey began with a simple idea: to empower businesses, big and 
+                        small, with packaging solutions that reflect their values and aspirations.
+                        Today, we stand as industry leaders, driven by a passion for innovation 
+                        and a commitment to excellence.
+                        What sets us apart? It's our unwavering dedication to quality, creativity, 
+                        and sustainability. From the initial concept to the final product, 
+                        we work closely with our clients to understand their unique needs and 
+                        bring their vision to life. Whether it's a custom-designed box for a luxury 
+                        brand or eco-friendly packaging for a conscious consumer, we have the 
+                        expertise and resources to deliver beyond expectations.
+                        <br />
+                        So, whether you're launching a new product, expanding your brand, 
+                        or reimagining your packaging strategy, let Micky's Prints be your trusted 
+                        partner on this exciting journey. 
+                        Welcome to Micky's Prints – where packaging meets perfection, 
+                        and dreams become reality."
+    
+                        </p>
+                </div>  
+            </div>
+           </div>
 
         {/* WHAT WE DO */}
         <div className="row" style={{padding: '100px 50px', backgroundColor: '#1A618B', color: '#FFFFFF'}}>
@@ -175,7 +173,8 @@ const Home = () => {
 
         {/* PACKAGING DESIGN */}
         
-       <div className="row" style={{backgroundColor: '#C4C6DB', paddingTop: '30px'}}>
+     <div className="container">
+     <div className="row" style={{backgroundColor: '#C4C6DB', paddingTop: '30px'}}>
        <div className="row">
             <div className="col text-center">
             <strong><h2 className = 'fw-bold' >Stunning Packaging Design</h2></strong>
@@ -183,9 +182,10 @@ const Home = () => {
             </div>
         </div>
         <div className="col text-center ">
-            <img  style={{minWidth: '500px'}} src={Frame} alt="" />
+            <img  style={{maxWidth: '400px'}} src={Frame} alt="" />
         </div>
        </div>
+     </div>
 
        {/* OUR CUSTOMER */}
        <div className="row text-center" style={{paddingTop: '50px'}}>
