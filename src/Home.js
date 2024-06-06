@@ -173,7 +173,7 @@ const Home = () => {
 
         {/* PACKAGING DESIGN */}
         
-     <div className="container-fluid">
+     
      <div className="row" style={{backgroundColor: '#C4C6DB', paddingTop: '30px'}}>
        <div className="row">
             <div className="col text-center">
@@ -185,7 +185,7 @@ const Home = () => {
             <img  className='img-fluid' style={{maxWidth: '400px'}} src={Frame} alt="" />
         </div>
        </div>
-     </div>
+    
 
        {/* OUR CUSTOMER */}
        <div className="row text-center" style={{paddingTop: '50px'}}>
@@ -198,7 +198,7 @@ const Home = () => {
        </div>
 
        {/* CONTACT */}
-       <div className="container">
+       
        <div id='contact' className="row" style={{paddingTop: '100px', paddingLeft: '100px', backgroundColor: '#EFDAD9', marginTop: '150px'}}>
         <div className="col-md-3">
         <img className='img-fluid' src={boy} alt="" />
@@ -210,7 +210,7 @@ const Home = () => {
             {Myform()};
         </div>
        </div>
-       </div>
+    
 
        {/* INFO */}
        <div className="row" style={{paddingTop: '50px', paddingBottom: '50px', backgroundColor: '#1A618B', color: 'white' }}>
