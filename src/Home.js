@@ -198,6 +198,7 @@ const Home = () => {
        </div>
 
        {/* CONTACT */}
+       <div className="container">
        <div id='contact' className="row" style={{paddingTop: '100px', paddingLeft: '100px', backgroundColor: '#EFDAD9', marginTop: '150px'}}>
         <div className="col-md-3">
         <img className='img-fluid' src={boy} alt="" />
@@ -208,6 +209,7 @@ const Home = () => {
             <h2 className='contact-bus'>Let's Talk Business!</h2>
             {Myform()};
         </div>
+       </div>
        </div>
 
        {/* INFO */}
