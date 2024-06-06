@@ -13,7 +13,7 @@ const Navbar = () =>{
     </a>
 
     {/* Toggle button for mobile view */}
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
@@ -22,13 +22,13 @@ const Navbar = () =>{
      <div style={{paddingRight: '50px' }} className='links'>
      <ul class="navbar-nav fw-bolder">
         <li class="nav-item">
-          <a style={{paddingRight: '60px'}}  class="nav-link" href="#about">About</a>
+        <Link style={{paddingRight: '50px'}} to="About" spy={true} smooth={true} offset={-120} duration={1000}>About</Link>
         </li>
         <li class="nav-item">
-          <a style={{paddingRight: '60px'}} class="nav-link" href="#contact">Contact</a>
+        <Link style={{paddingRight: '50px'}} to="Contact" spy={true} smooth={true} offset={-120} duration={500}>Contact</Link>
         </li>
         <li class="nav-item">
-          <a style={{paddingRight: '60px'}}  class="nav-link" href="#product">Our Product</a>
+        <Link to="Our-product" spy={true} smooth={true} offset={-40} duration={500}>Our Product</Link>
         </li>
       </ul>
      </div>

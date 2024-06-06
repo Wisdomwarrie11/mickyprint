@@ -5,10 +5,7 @@ import Navbar from './Navbar'
 function App (){
   return(
     <>
-    <div className='container-lg' style={{backgroundColor: '#FFF6F6'}}>
-      
-    <Home/>
-    </div>
+  <Home/>
     </>
   )
 }

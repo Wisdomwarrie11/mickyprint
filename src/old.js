@@ -21,8 +21,7 @@ import logo from './logo.png'
 import line from './line.png'
 import Navbar from './Navbar';
 
-const Home = () =>{
-
+const Home = () => {
     const year = new Date();
     const top = () => {
         window.scrollTo(0,0);
@@ -52,7 +51,6 @@ const Home = () =>{
                 console.log(error.text);
             });
     };
-
 
     const Myform = () => {
         return (
@@ -85,27 +83,38 @@ const Home = () =>{
         );
     };
 
-return(
-    <>
-    <div className="container">
-        <div className="row">
-            <div className="col">
+    return(
+      <>
+       <Navbar/>
+
+     <div className="container-fluid" style={{backgroundColor: '#FFF6F6', paddingTop: '50px'}}>
+     <div className='my-5'>
+     <div className="row justify-content-center">
+            <div className="col-md-5 text-center text-md-start">
             <h1 style={{paddingLeft: '80px', fontSize: '50px', color: '#1A618B'}}>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
             </div>
-            <div className="col-md-5 text-center text-md-start">
-            <img className= 'img-fluid' src={Frame1} alt="" />
+            <div className="col-md-5 d-md-block">
+                <img className= 'img-fluid' src={Frame1} alt="" />
             </div>
         </div>
-    </div>
+     </div>
+       
 
-    {/* ABOUT PAGE */}
-    <div className="container">
-        <div className="row">
-            <div className="col-md-6  d-md-block">
-            <img className='img-fluid' src={paper} alt="" />
-            </div>
-            <div className="col-md-6 col-md-text-center">
-            <strong><h1 className='fw-2' style={{color:'#1A618B'}}>Packaging at it’s <br />Finest <br /></h1></strong>
+        {/* ABOUT PAGE */}
+           <div className="About container-fluid">
+           <div id='about' className="row" style={{marginTop: '250px'}}>
+                
+                <div className="col-md-6 d-md-block" >
+                        <img className='img-fluid' src={paper} alt="" />
+                    </div>
+                    {/* <div className="col">
+                        <h2>About Micky Prints</h2>
+                    </div> */}
+                    <div className='col-sm-6'>
+                    <div className="col text-center">
+                        <p>About MickyPrint</p>
+                    </div>
+                        <strong><h1 className='fw-2' style={{color:'#1A618B'}}>Packaging at it’s <br />Finest <br /></h1></strong>
                         <p style={{}}>
                         "At Micky's Prints, we believe that packaging is not just a means 
                         to deliver products; it's an opportunity to make a lasting impression. 
@@ -129,15 +138,16 @@ return(
                         partner on this exciting journey. 
                         Welcome to Micky's Prints – where packaging meets perfection, 
                         and dreams become reality."
-                        </p>  
+    
+                        </p>
+                </div>  
             </div>
-        </div>
-    </div>
-    {/* WHAT WE DO */}
-    <div className="container">
-        <div className="row">
-            <div className="col">
-            <h2 className = 'fw-bold' style={{color: '#EFDAD9'}}>WHAT WE DO</h2> 
+           </div>
+
+        {/* WHAT WE DO */}
+        <div className=" row" style={{padding: '100px 50px', backgroundColor: '#1A618B', color: '#FFFFFF'}}>
+            <div className="col text-center">
+            <h2 className = 'fw-bold' style={{color: '#EFDAD9'}}>WHAT WE DO</h2>
             </div>
             <div className="row justify-content-md-center sm-text-center" style={{paddingTop: '50px'}}>
             <div className="col-md-4">
@@ -155,63 +165,94 @@ return(
                 </div>
             </div>
         </div>
-    </div>
 
-    {/* PRODUCT */}
-    <div className="container">
-        <div className="row">
-            <div className="col">
-            <div id='product' className=" Our-product row text-center" style={{paddingTop: '50px'}}>
+        {/* PRODUCT */}
+        <div id='product' className=" Our-product row text-center" style={{paddingTop: '50px'}}>
         <h2 className = 'fw-bold' style={{color: '#1A618B'}}>OUR RECENT PRODUCT</h2>
         </div>
-            </div>
-        </div>
-    </div>
 
-    {/* PACKAGING DESING */}
-    <div className="container">
-        <div className="row">
-            <div className="col">
+        {/* PACKAGING DESIGN */}
+        
+     
+     <div className="row" style={{backgroundColor: '#C4C6DB', paddingTop: '30px'}}>
+       <div className="row">
+            <div className="col text-center">
             <strong><h2 className = 'fw-bold' >Stunning Packaging Design</h2></strong>
-                <p>Our stunning packaging design services are tailored to elevate your products and captivate <br />consumers' attention. We specialize in creating visually striking packaging that stands out on the <br /> shelves and leaves a lasting impression.</p>  
+                <p>Our stunning packaging design services are tailored to elevate your products and captivate <br />consumers' attention. We specialize in creating visually striking packaging that stands out on the <br /> shelves and leaves a lasting impression.</p>
             </div>
         </div>
         <div className="col text-center ">
             <img  className='img-fluid' style={{maxWidth: '400px'}} src={Frame} alt="" />
         </div>
-    </div>
+       </div>
+    
 
-    {/* OUR CUSTOMER */}
-    <div className="container">
-        <div className="row">
-            <div className="col">
-            <h2 style={{ fontSize: '40px'}}>Our Customers</h2>
+       {/* OUR CUSTOMER */}
+       <div className="row text-center" style={{paddingTop: '50px'}}>
+        <div className="col">
+        <h2 style={{ fontSize: '40px'}}>Our Customers</h2>
         <p>Providing for Nigeria’s packaging needs for many years has allowed <br />
         us to gain the support of some truly wonderful customers.</p>
-            </div>
-            <img src={container} alt="" />
-        </div> 
-    </div>
+        </div>
+         <img src={container} alt="" />
+       </div>
 
-    {/* OUR CONTACT*/}
-    <div className="container">
-        <div className="row">
-            <div className="col">
-            <img className='img-fluid' src={boy} alt="" />  
-            </div>
-            <div className='col-md-6'>
+       {/* CONTACT */}
+       
+       <div id='contact' className=" Contact row" style={{paddingTop: '100px',backgroundColor: '#EFDAD9', marginTop: '150px'}}>
+        <div className="col-md-3">
+        <img className='img-fluid' src={boy} alt="" />
+        </div>
+       <div className="row">
+       <div className='col-md-6'>
         <h2>Contact us
             </h2>
             <h2 className='contact-bus'>Let's Talk Business!</h2>
             {Myform()};
         </div>
+       </div>
+       </div>
+    
+
+       {/* INFO */}
+       <div className="row" style={{paddingTop: '50px', paddingBottom: '50px', backgroundColor: '#1A618B', color: 'white' }}>
+        <div className="col-md-8">
+        <ul>
+            <img  src={logo} alt="logo" />
+                <p>contact us if you have any question based <br />on partnership, sponsorship. Please contact us at <br /> info@mickyprint.com</p>
+            </ul>
+           <div className='socials' style={{paddingLeft: '50px'}}>
+           <a href=""><img src= {fb} alt="" /></a>
+           <a href=""><img src= {insta} alt="" /></a>
+           <a href=""><img src={linkedin} alt="" /></a>
+           <a href=""><img src={yt} alt="" /></a>
+           <a href=""><img src={x} alt="" /></a>
+
+           </div>
+          
         </div>
-    </div>
+        <div className='col-md-4'>
+            <h3>Contact Information</h3>
+            <p>Email info: info@mickyprints.com</p>
+            <p>Phone: 08082346361, 08138148024, 08158470504</p>
+            <p>Address: 22 Cameroon Road Aba, Abia State, Nigeria. </p>
+        </div>
+       </div>
+        {/* FOOTER */}
+       <div className="row">
+       <div className='col text-center' style={{paddingTop: '20px',backgroundColor: '#e51a49', color: 'white'}}>
+            <p>copyright @{year.getFullYear()} Mickyprint All right Reserved. <span>Terms of Use. Privacy Policy</span></p>
+        </div>
+       </div>
 
 
-    </>
-)
 
-};
 
-export default Home
+
+     </div>
+      </>
+
+    )
+  };
+
+    export default Home
