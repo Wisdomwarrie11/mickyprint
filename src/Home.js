@@ -203,12 +203,14 @@ const Home = () => {
         <div className="col-md-3">
         <img className='img-fluid' src={boy} alt="" />
         </div>
-        <div className='col-md-6'>
+       <div className="row">
+       <div className='col-md-6'>
         <h2>Contact us
             </h2>
             <h2 className='contact-bus'>Let's Talk Business!</h2>
             {Myform()};
         </div>
+       </div>
        </div>
     
 
