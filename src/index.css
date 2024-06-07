@@ -19,3 +19,7 @@ cursor: pointer;
 text-decoration: none;
 color: #F5168D;
 }
+
+:root{
+  background-color: #FFF6F6;
+}
