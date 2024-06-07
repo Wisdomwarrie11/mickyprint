@@ -1,8 +1,11 @@
 
 .my-5 a{
   padding-left: 150px;
-
   
+}
+
+.navbar a{
+  color:#F5168D
 }
 .my-5 a {
   color: #F5168D;

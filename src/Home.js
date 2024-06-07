@@ -20,6 +20,7 @@ import yt from './yt.png';
 import logo from './logo.png'
 import line from './line.png'
 import Navbar from './Navbar';
+import Myform from './form';
 
 const Home = () =>{
 
@@ -28,66 +29,11 @@ const Home = () =>{
         window.scrollTo(0,0);
     }
 
-    const [names, setNames] = useState('');
-    const [number, setNumber] = useState('');
-    const [email, setEmail] = useState('');
-    const [isResponsive, setIsResponsive] = useState(false);
-    const [message, setMessage] = useState('I want to create a packaging for my product');
-    const form = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-        // Construct the WhatsApp message URL
-        const phoneNumber = '2348164784432'; // Replace with your WhatsApp number
-        const whatsappMessage = `https://wa.me/${phoneNumber}?text=Name:%20${encodeURIComponent(names)}%0AEmail:%20${encodeURIComponent(email)}%0AMessage:%20${encodeURIComponent(message)}`;
-        
-        // Open WhatsApp with the pre-filled message
-        window.open(whatsappMessage, '_blank');
-
-        // Optional: Send an email using emailjs
-        emailjs.sendForm('service_0bebbk8', 'template_dg0adum', form.current, 'oYz9P4v4ylM0rh7Di')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
-
-
-    const Myform = () => {
-        return (
-            <div style={{ paddingLeft: '50px', paddingTop: '70px' }}>
-                <form ref={form} onSubmit={sendEmail}>
-                    <label style={{paddingBottom: '10px'}}>Name</label>
-                    <input style={{fontSize: '20px'}}
-                        name='from_name'
-                        placeholder='Your full name'
-                        type='text'
-                        value={names}
-                        required
-                        onChange={(e) => setNames(e.target.value)}
-                    />
-                    <label>Your message</label>
-                    <textarea style={{fontSize: '20px', padding: '20px 30px'}}
-                        name='message'
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                    ></textarea>
-                    <strong>
-                        <button
-                            style={{
-                                marginLeft: '1px', borderRadius: '10px', cursor: 'pointer',color: 'white',backgroundColor: '#1A618B', fontSize: '30px', fontWeight: '500px', width: '337px', height: '85px', paddingBottom: '8px', marginTop: '20px'}}>
-                            Join us
-                        </button>
-                    </strong>
-                </form>
-            </div>
-        );
-    };
-
+    
 return(
     <>
-    <div className="container">
+    <div className="container" style={{backgroundColor: '#FFF6F6'}}>
+    <div className="container " style={{paddingTop: '150px', backgroundColor: '#FFF6F6'}}>
         <div className="row">
             <div className="col">
             <h1 style={{paddingLeft: '80px', fontSize: '50px', color: '#1A618B'}}>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
@@ -99,7 +45,7 @@ return(
     </div>
 
     {/* ABOUT PAGE */}
-    <div className="container">
+    <div className="container" style={{marginTop: '150px'}}>
         <div className="row">
             <div className="col-md-6  d-md-block">
             <img className='img-fluid' src={paper} alt="" />
@@ -134,9 +80,9 @@ return(
         </div>
     </div>
     {/* WHAT WE DO */}
-    <div className="container">
-        <div className="row">
-            <div className="col">
+    <div className="container" style={{ backgroundColor: '#1A618B'}}>
+        <div className="row" style={{paddingTop: '50px',color: 'white', paddingLeft: '20px', paddingBottom: '20px' }}>
+            <div className="col text-center" >
             <h2 className = 'fw-bold' style={{color: '#EFDAD9'}}>WHAT WE DO</h2> 
             </div>
             <div className="row justify-content-md-center sm-text-center" style={{paddingTop: '50px'}}>
@@ -158,10 +104,10 @@ return(
     </div>
 
     {/* PRODUCT */}
-    <div className="container">
+    <div className="container" style={{marginTop: '50px'}}>
         <div className="row">
             <div className="col">
-            <div id='product' className=" Our-product row text-center" style={{paddingTop: '50px'}}>
+            <div id='product' className=" Our-product row text-center" style={{paddingTop: '5px'}}>
         <h2 className = 'fw-bold' style={{color: '#1A618B'}}>OUR RECENT PRODUCT</h2>
         </div>
             </div>
@@ -169,9 +115,9 @@ return(
     </div>
 
     {/* PACKAGING DESING */}
-    <div className="container">
+    <div className="container" style={{marginTop: '50px', backgroundColor: '#C4C6DB', paddingTop: '10px'}}>
         <div className="row">
-            <div className="col">
+            <div className="col text-md-center">
             <strong><h2 className = 'fw-bold' >Stunning Packaging Design</h2></strong>
                 <p>Our stunning packaging design services are tailored to elevate your products and captivate <br />consumers' attention. We specialize in creating visually striking packaging that stands out on the <br /> shelves and leaves a lasting impression.</p>  
             </div>
@@ -182,7 +128,7 @@ return(
     </div>
 
     {/* OUR CUSTOMER */}
-    <div className="container">
+    <div className="container text-center" style={{marginTop: '150px'}}>
         <div className="row">
             <div className="col">
             <h2 style={{ fontSize: '40px'}}>Our Customers</h2>
@@ -194,21 +140,57 @@ return(
     </div>
 
     {/* OUR CONTACT*/}
-    <div className="container">
-        <div className="row">
-            <div className="col">
-            <img className='img-fluid' src={boy} alt="" />  
-            </div>
-            <div className='col-md-6'>
-        <h2>Contact us
-            </h2>
-            <h2 className='contact-bus'>Let's Talk Business!</h2>
-            {Myform()};
+  <div className="container" style={{marginTop: '150px', backgroundColor: '#EFDAD9'}}>
+    <div className="row">
+        <div className="col-md-6 ">
+        <img style={{maxHeight: '500px', paddingTop: '100px', paddingLeft: '50px' }} className='img-fluid' src={boy} alt="" />
         </div>
+        <div className="col-md-4">
+            <h2>
+                Contact us
+                <br />
+                Let's Talk Business!
+            </h2>
+            <Myform/>
+
         </div>
     </div>
+  </div>
 
+  {/* INFO */}
+  <div className="container" style={{ backgroundColor: '#1A618B', color: 'white', paddingTop: '20px', paddingBottom: '20px'}}>
+  <div className="row">
+        <div className="col-md-8">
+        <ul>
+            <img  src={logo} alt="logo" />
+                <p>contact us if you have any question based <br />on partnership, sponsorship. Please contact us at <br /> info@mickyprint.com</p>
+            </ul>
+           <div className='socials' style={{paddingLeft: '50px'}}>
+           <a href=""><img src= {fb} alt="" /></a>
+           <a href=""><img src= {insta} alt="" /></a>
+           <a href=""><img src={linkedin} alt="" /></a>
+           <a href=""><img src={yt} alt="" /></a>
+           <a href=""><img src={x} alt="" /></a>
 
+           </div>
+          
+        </div>
+        <div className='col-md-4'>
+            <h3>Contact Information</h3>
+            <p>Email info: info@mickyprints.com</p>
+            <p>Phone: 08082346361, 08138148024, 08158470504</p>
+            <p>Address: 22 Cameroon Road Aba, Abia State, Nigeria. </p>
+        </div>
+       </div>
+  </div>
+  <div className="container" style={{paddingTop: '10px', backgroundColor: '#F5168D', color: 'white'}}>
+        <div className="row">
+       <div className='col text-center'>
+            <p>copyright @{year.getFullYear()} Mickyprint All right Reserved. <span>Terms of Use. Privacy Policy</span></p>
+        </div>
+       </div>
+        </div>
+    </div>
     </>
 )
 

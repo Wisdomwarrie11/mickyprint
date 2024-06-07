@@ -22,13 +22,13 @@ const Navbar = () =>{
      <div style={{paddingRight: '50px' }} className='links'>
      <ul class="navbar-nav fw-bolder">
         <li class="nav-item">
-        <Link style={{paddingRight: '50px'}} to="About" spy={true} smooth={true} offset={-120} duration={1000}>About</Link>
+        <Link style={{paddingRight: '50px', color: '#F5168D'}} to="About" spy={true} smooth={true} offset={-120} duration={1000}>About</Link>
         </li>
         <li class="nav-item">
-        <Link style={{paddingRight: '50px'}} to="Contact" spy={true} smooth={true} offset={-120} duration={500}>Contact</Link>
+        <Link style={{paddingRight: '50px', color: '#F5168D'}} to="Contact" spy={true} smooth={true} offset={-120} duration={500}>Contact</Link>
         </li>
         <li class="nav-item">
-        <Link to="Our-product" spy={true} smooth={true} offset={-40} duration={500}>Our Product</Link>
+        <Link  style={{color: '#F5168D'}}to="Our-product" spy={true} smooth={true} offset={-40} duration={500}>Our Product</Link>
         </li>
       </ul>
      </div>
