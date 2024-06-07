@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 function App (){
   return(
     <>
-    <div >
+    <div style={{backgroundColor: '#FFF6F6'}} >
     <Navbar/>
     <Home/>
     </div>
