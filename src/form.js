@@ -75,7 +75,7 @@ const Myform =()=>{
                             <label for="message" className="form-label fw-bold">Message</label>
                             <textarea style={{width: '300px', fontSize: '20px', padding: '20px 30px'}} className="form-control" name="message" id="message"></textarea>
                         <div className="mb-4">
-                            <button style={{borderRadius: '10px', cursor: 'pointer',color: 'white',backgroundColor: '#1A618B', fontSize: '30px', fontWeight: '500px', width: '300px', height: '85px', paddingBottom: '8px', marginTop: '20px'}} type="submit" className="btn mt-5 fw-bold">
+                            <button style={{borderRadius: '10px', cursor: 'pointer',color: 'white',backgroundColor: '#1A618B', fontSize: '30px', fontWeight: '500px', width: '250px', height: '85px', paddingBottom: '8px', marginTop: '20px'}} type="submit" className="btn mt-5 fw-bold">
                                 Join Us
                             </button>
                         </div>

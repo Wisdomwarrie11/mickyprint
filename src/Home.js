@@ -46,11 +46,11 @@ return(
     {/* ABOUT PAGE */}
     <div className=" About container-fluid" style={{marginTop: '150px'}}>
         <div className="row">
-            <div className="col-md-6  d-md-block">
+            <div className="col-md-6 my-5 d-md-block">
             <img className='img-fluid text-center' src={paper} alt="" />
             </div>
             <div className="col-md-6 col-md-text-center">
-            <strong><h1 className='fw-bold my-5' style={{color:'#1A618B'}}>Packaging at it’s <br />Finest <br /></h1></strong>
+            <strong><h1 className='fw-bold' style={{color:'#1A618B'}}>Packaging at it’s <br />Finest <br /></h1></strong>
                         <p style={{}}>
                         "At Micky's Prints, we believe that packaging is not just a means 
                         to deliver products; it's an opportunity to make a lasting impression. 
