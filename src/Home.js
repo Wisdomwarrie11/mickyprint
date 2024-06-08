@@ -143,7 +143,7 @@ return(
     </div>
 
     {/* OUR CONTACT*/}
-  <div className=" Contact container-fluid" style={{marginTop: '150px' ,backgroundColor: '#EFDAD9'}}>
+  <div className=" Contact container-fluid" style={{marginTop: '50px' ,backgroundColor: '#EFDAD9'}}>
     <div className="row">
         <div className="col-md-6 ">
         <img style={{maxHeight: '550px', paddingLeft: '50px', marginTop: '20px'}} className='img-fluid mx-2 ' src={boy} alt="" />
