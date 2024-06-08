@@ -32,7 +32,7 @@ const Home = () =>{
     
 return(
     <>
-    <div className="container-fluid " style={{paddingTop: '150px'}}>
+    <div className="container-fluid justify-content-center" style={{paddingTop: '150px'}}>
         <div className="row align-items-center">
             <div className="col text-center">
             <h1 style={{paddingLeft: '80px', fontSize: '50px', color: '#1A618B'}}>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
@@ -146,7 +146,7 @@ return(
   <div className=" Contact container-fluid" style={{marginTop: '150px' ,backgroundColor: '#EFDAD9'}}>
     <div className="row">
         <div className="col-md-6 ">
-        <img style={{maxHeight: '500px', paddingLeft: '100px', marginTop: '150px'}} className='img-fluid mx-2' src={boy} alt="" />
+        <img style={{maxHeight: '550px', paddingLeft: '50px', marginTop: '20px'}} className='img-fluid mx-2' src={boy} alt="" />
         </div>
         <div className="col-md-3 justify-content-center" style={{paddingTop: '100px'}}>
         <div className="fw-bold mx-2 text-align-center">
