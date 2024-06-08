@@ -240,7 +240,7 @@ const Home = () => {
        </div>
         {/* FOOTER */}
        <div className="row">
-       <div className='col text-center' style={{paddingTop: '20px',backgroundColor: '#e51a49', color: 'white'}}>
+       <div className='col text-center'>
             <p>copyright @{year.getFullYear()} Mickyprint All right Reserved. <span>Terms of Use. Privacy Policy</span></p>
         </div>
        </div>
