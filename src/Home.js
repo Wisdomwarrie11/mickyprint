@@ -38,7 +38,7 @@ return(
             <h1 style={{ fontSize: '50px', color: '#1A618B'}}>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
             </div>
             <div className="col-md-5 text-center text-md-start">
-            <img style={{paddingRight: '40px'}} className= 'img-fluid' src={Frame1} alt="" />
+            <img className= 'img-fluid' src={Frame1} alt="" />
             </div>
         </div>
     </div>
