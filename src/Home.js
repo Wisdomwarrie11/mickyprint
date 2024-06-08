@@ -180,7 +180,7 @@ return(
         <div className='col-md-4 py-5 px-5'>
             <h3>Contact Information</h3>
             <p>Email info: info@mickyprints.com</p>
-            <p>Phone: 08082346361, 08138148024, 08158470504</p>
+            <p>Phone: 08082346361, 08138148024, 07036327048</p>
             <p>Address: 22 Cameroon Road Aba, Abia State, Nigeria. </p>
         </div>
        </div>
