@@ -14,7 +14,7 @@ const Navbar = () =>{
     </a>
 
     {/* Toggle button for mobile view */}
-    <button style={{marginRight: '10px'}} class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <button style={{marginRight: '20px'}} class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
