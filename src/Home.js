@@ -126,7 +126,7 @@ return(
             </div>
         </div>
         <div className="col text-center ">
-            <img  className='img-fluid' style={{maxWidth: '400px'}} src={Frame} alt="" />
+            <img  className='img-fluid' style={{maxWidth: '300px'}} src={Frame} alt="" />
         </div>
     </div>
 
