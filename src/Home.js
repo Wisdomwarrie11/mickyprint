@@ -34,8 +34,8 @@ return(
     <>
     <div className="container-fluid justify-content-center" style={{paddingTop: '150px'}}>
         <div className="row align-items-center">
-            <div className="col text-center">
-            <h1 style={{paddingLeft: '80px', fontSize: '50px', color: '#1A618B'}}>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
+            <div className="col text-center md-mx-5">
+            <h1 style={{ fontSize: '50px', color: '#1A618B'}}>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
             </div>
             <div className="col-md-5 text-center text-md-start">
             <img style={{paddingRight: '40px'}} className= 'img-fluid' src={Frame1} alt="" />
@@ -50,7 +50,7 @@ return(
             <img className='img-fluid' src={paper} alt="" />
             </div>
             <div className="col-md-6 col-md-text-center">
-            <strong><h1 className='fw-2' style={{color:'#1A618B'}}>Packaging at it’s <br />Finest <br /></h1></strong>
+            <strong><h1 className='fw-bold my-5' style={{color:'#1A618B'}}>Packaging at it’s <br />Finest <br /></h1></strong>
                         <p style={{}}>
                         "At Micky's Prints, we believe that packaging is not just a means 
                         to deliver products; it's an opportunity to make a lasting impression. 
@@ -120,8 +120,8 @@ return(
     {/* PACKAGING DESING */}
     <div className="container-fluid" style={{Width: '100%',marginTop: '50px', backgroundColor: '#C4C6DB', paddingTop: '10px'}}>
         <div className="row">
-            <div className="col text-md-center">
-            <strong><h2 className = 'fw-bold' >Stunning Packaging Design</h2></strong>
+            <div className="col text-md-center py-5">
+            <strong><h2 className = 'fw-bolder' >Stunning Packaging Design</h2></strong>
                 <p>Our stunning packaging design services are tailored to elevate your products and captivate <br />consumers' attention. We specialize in creating visually striking packaging that stands out on the <br /> shelves and leaves a lasting impression.</p>  
             </div>
         </div>
