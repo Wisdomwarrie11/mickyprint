@@ -33,12 +33,12 @@ const Home = () =>{
 return(
     <>
     <div className="container-lg " style={{paddingTop: '150px'}}>
-        <div className="row">
+        <div className="row align-items-center">
             <div className="col">
             <h1 style={{paddingLeft: '80px', fontSize: '50px', color: '#1A618B'}}>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
             </div>
             <div className="col-md-5 text-center text-md-start">
-            <img className= 'img-fluid' src={Frame1} alt="" />
+            <img style={{paddingRight: '40px'}} className= 'img-fluid' src={Frame1} alt="" />
             </div>
         </div>
     </div>
@@ -75,6 +75,10 @@ return(
                         Welcome to Micky's Prints – where packaging meets perfection, 
                         and dreams become reality."
                         </p>  
+                        <div className="col-6 d-md-block">
+                            <h2>6+</h2>
+                            <p>Year's <br /> in Packaging Solution</p>
+                        </div>
             </div>
         </div>
     </div>
@@ -139,17 +143,16 @@ return(
     </div>
 
     {/* OUR CONTACT*/}
-  <div className=" Contact container-lg" style={{marginTop: '150px', paddingBottom: '50px' ,backgroundColor: '#EFDAD9'}}>
+  <div className=" Contact container" style={{marginTop: '150px' ,backgroundColor: '#EFDAD9'}}>
     <div className="row">
         <div className="col-md-6 ">
-        <img style={{maxHeight: '500px', paddingTop: '100px', paddingLeft: '50px' }} className='img-fluid' src={boy} alt="" />
+        <img style={{maxHeight: '500px', paddingLeft: '150px', marginTop: '150px'}} className='img-fluid' src={boy} alt="" />
         </div>
-        <div className="col-md-4">
-            <h2>
-                Contact us
-                <br />
-                Let's Talk Business!
-            </h2>
+        <div className="col-md-3" style={{paddingTop: '100px'}}>
+        <div className="fw-bold mx-2">
+                    <p style={{color: '#e51a49'}}>Contact Us</p>
+                    <h2  className = 'fw-bold' style={{color: '#1A618B'}}>Let's talk business</h2>
+                </div>
             <Myform/>
 
         </div>
@@ -157,7 +160,7 @@ return(
   </div>
 
   {/* INFO */}
-  <div className="container-lg" style={{ backgroundColor: '#1A618B', color: 'white', paddingTop: '20px', paddingBottom: '20px'}}>
+  <div className="container-lg" style={{ backgroundColor: '#1A618B', color: 'white', paddingTop: '20px', }}>
   <div className="row">
         <div className="col-md-8">
         <ul>
