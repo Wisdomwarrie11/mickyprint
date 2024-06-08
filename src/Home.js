@@ -134,7 +134,7 @@ return(
     <div className="container-fluid text-center" style={{marginTop: '150px'}}>
         <div className="row">
             <div className="col">
-            <h2 style={{ fontSize: '40px'}}>Our Customers</h2>
+            <h2 className='fw-bold' style={{ fontSize: '40px'}}>Our Customers</h2>
         <p>Providing for Nigeria’s packaging needs for many years has allowed <br />
         us to gain the support of some truly wonderful customers.</p>
             </div>
