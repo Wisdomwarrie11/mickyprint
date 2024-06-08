@@ -32,7 +32,7 @@ const Home = () =>{
     
 return(
     <>
-    <div className="container-fluid justify-content-center" style={{paddingTop: '150px'}}>
+    <div className="container justify-content-center" style={{paddingTop: '150px'}}>
         <div className="row align-items-center">
             <div className="col text-center md-mx-5">
             <h1 style={{ fontSize: '50px', color: '#1A618B'}}>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
@@ -50,7 +50,7 @@ return(
             <img className='img-fluid text-center' src={paper} alt="" />
             </div>
             <div className="col-md-6 col-md-text-center">
-            <strong><h1 className='fw-bold' style={{color:'#1A618B'}}>Packaging at it’s <br />Finest <br /></h1></strong>
+            <strong><h1 className='fw-bold' style={{color:'#1A618B', paddingTop: '35px'}}>Packaging at it’s <br />Finest <br /></h1></strong>
                         <p style={{}}>
                         "At Micky's Prints, we believe that packaging is not just a means 
                         to deliver products; it's an opportunity to make a lasting impression. 
@@ -146,7 +146,7 @@ return(
   <div className=" Contact container-fluid" style={{marginTop: '150px' ,backgroundColor: '#EFDAD9'}}>
     <div className="row">
         <div className="col-md-6 ">
-        <img style={{maxHeight: '550px', paddingLeft: '50px', marginTop: '20px'}} className='img-fluid mx-2' src={boy} alt="" />
+        <img style={{maxHeight: '550px', paddingLeft: '50px', marginTop: '20px'}} className='img-fluid mx-2 ' src={boy} alt="" />
         </div>
         <div className="col-md-3 justify-content-center" style={{paddingTop: '100px'}}>
         <div className="fw-bold mx-2 text-align-center">
