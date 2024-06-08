@@ -7,7 +7,7 @@ const Navbar = () =>{
     return(
         <>
   
-    <nav class=" navbar fixed-top navbar-expand-md bg-light">
+    <nav class=" navbar fixed-top navbar-expand-md bg-light" style={{paddingLeft: '10px'}}>
   <div class="container-xxl">
     <a class="navbar-brand" href="#intro">
         <img src={micky} alt="" />
@@ -21,16 +21,16 @@ const Navbar = () =>{
     {/* The links */}
     <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
      <div style={{paddingRight: '50px' }} className='links'>
-     <ul class="navbar-nav fw-bolder">
+     <ul class="navbar-nav fw-bolder text-center">
         <li class="nav-item">
-        <Link style={{paddingRight: '50px', color: '#F5168D'}} to="About" spy={true} smooth={true} offset={-120} duration={1000}>About</Link>
+        <Link style={{ color: '#F5168D'}} to="About" spy={true} smooth={true} offset={-120} duration={1000}>About</Link>
         </li>
         <li class="nav-item">
-        <Link  style={{paddingRight: '50px',color: '#F5168D'}}to="Our-product" spy={true} smooth={true} offset={-40} duration={500}>Our Product</Link>
+        <Link  style={{paddingTop: '15px',color: '#F5168D'}}to="Our-product" spy={true} smooth={true} offset={-40} duration={500}>Our Product</Link>
 
         </li>
         <li class="nav-item">
-        <Link style={{ color: '#F5168D'}} to="Contact" spy={true} smooth={true} offset={-120} duration={500}>Contact</Link>
+        <Link style={{ paddingTop: '15px', color: '#F5168D'}} to="Contact" spy={true} smooth={true} offset={-120} duration={500}>Contact</Link>
 
         </li>
       </ul>
