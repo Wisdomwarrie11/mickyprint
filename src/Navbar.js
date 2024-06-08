@@ -7,21 +7,21 @@ const Navbar = () =>{
     return(
         <>
   
-    <nav class=" navbar fixed-top navbar-expand-md bg-light" style={{paddingLeft: '10px'}}>
+    <nav class=" navbar fixed-top navbar-expand-md bg-light " style={{}}>
   <div class="container-xxl">
     <a class="navbar-brand" href="#intro">
         <img src={micky} alt="" />
     </a>
 
     {/* Toggle button for mobile view */}
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <button style={{marginRight: '10px'}} class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
     {/* The links */}
     <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-     <div style={{paddingRight: '50px' }} className='links'>
-     <ul class="navbar-nav fw-bolder text-center">
+     <div style={{paddingRight: '100px' }} className='links'>
+     <ul class="navbar-nav fw-bolder">
         <li class="nav-item">
         <Link style={{ color: '#F5168D'}} to="About" spy={true} smooth={true} offset={-120} duration={1000}>About</Link>
         </li>
