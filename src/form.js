@@ -92,7 +92,7 @@ const Myform =()=>{
                             className="form-control" id="Name"  
                             required 
                             onChange={(e) => setNames(e.target.value)} 
-                            placeholder="e.g. John Davis" />
+                            placeholder="Your name" />
 
                             <label for="message" className="form-label fw-bold">Message</label>
                             <textarea style={{width: '300px', height: '150px', fontSize: '15px', padding: '10px 10px'}} 
