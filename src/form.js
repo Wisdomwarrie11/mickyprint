@@ -71,7 +71,7 @@ const Myform =()=>{
         const sendEmail = (e) => {
                     e.preventDefault();
                     // Construct the WhatsApp message URL
-                    const phoneNumber = '2349079126035'; // Replace with your WhatsApp number
+                    const phoneNumber = '2347036327048'; // Replace with your WhatsApp number
                     const whatsappMessage = `https://wa.me/${phoneNumber}?text= My name is %20${encodeURIComponent(names)}%20.%20${encodeURIComponent(message)}`;
                     
                     // Open WhatsApp with the pre-filled message
