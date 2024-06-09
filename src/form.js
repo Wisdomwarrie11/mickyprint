@@ -71,8 +71,8 @@ const Myform =()=>{
         const sendEmail = (e) => {
                     e.preventDefault();
                     // Construct the WhatsApp message URL
-                    const phoneNumber = '2347041197027'; // Replace with your WhatsApp number
-                    const whatsappMessage = `https://wa.me/${phoneNumber}?text=Name:%20${encodeURIComponent(names)}%0AEmail:%20${encodeURIComponent(email)}%0AMessage:%20${encodeURIComponent(message)}`;
+                    const phoneNumber = '2349079126035'; // Replace with your WhatsApp number
+                    const whatsappMessage = `https://wa.me/${phoneNumber}?text=Name:%20${encodeURIComponent(names)}%0AMessage:%20${encodeURIComponent(message)}`;
                     
                     // Open WhatsApp with the pre-filled message
                     window.open(whatsappMessage, '_blank');
@@ -102,7 +102,7 @@ const Myform =()=>{
                         <div className="mb-4">
                             <button style={{borderRadius: '10px', cursor: 'pointer',
                             color: 'white',backgroundColor: '#1A618B', fontSize: '30px', 
-                            fontWeight: '500px', width: '250px', height: '85px', paddingBottom: '8px',
+                            fontWeight: '500px', width: '300px', height: '85px', paddingBottom: '8px',
                             marginTop: '20px'}} type="submit" className="btn mt-5 fw-bold">
                                 Join Us
                             </button>
