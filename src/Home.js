@@ -170,7 +170,7 @@ return(
         <div className="col-md-6 d-none d-md-block ms-5 ps-5 pe-5 me-15">
         <img style={{maxHeight: '600px', paddingLeft: '300px', marginTop: '20px', marginTop: '110px'}} className='img-fluid' src={boy} alt="" />
         </div>
-        <div className="col-md-3 ms-2 ps-2 text-start " style={{paddingTop: '170px'}}>
+        <div className="col-md-3 ms-2 ps-2 text-start " style={{paddingTop: '70px'}}>
         <div className="fw-bold mx-2 ms-4">
                     <p style={{color: '#e51a49'}}>Contact Us</p>
                     <h2  className = 'fw-bold' style={{color: '#1A618B'}}>Let's talk business</h2>
