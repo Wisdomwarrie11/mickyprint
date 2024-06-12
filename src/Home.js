@@ -51,7 +51,7 @@ return(
 
     {/* ABOUT PAGE */}
     <section id='About'>
-    <div  className=" container" style={{marginTop: '300px'}}>
+    <div  className=" container" style={{marginTop: '200px'}}>
     <div className="row text-center d-md-block">
                     <div  className="col">
                         <img src={About} alt="" />
@@ -86,14 +86,14 @@ return(
                         expertise and resources to deliver beyond expectations.
                         <br />
                         So, whether you're launching a new product, expanding your brand, 
-                        or reimagining your packaging strategy, let Micky's Prints be your trusted 
+                        or reimagining your packaging strategy, let Mickys Prints be your trusted 
                         partner on this exciting journey. 
                         Welcome to Micky Prints – where packaging meets perfection, 
                         and dreams become reality."
                         </p>  
                         <div className="col-6 d-md-block">
                             <h2>6+</h2>
-                            <p>Year's <br /> in Packaging Solution</p>
+                            <p>Years <br /> in Packaging Solution</p>
                         </div>
             </div>
         </div>
