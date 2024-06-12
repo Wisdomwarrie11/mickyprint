@@ -38,7 +38,7 @@ const Home = () =>{
     
 return(
     <>
-    <div id='intro' className="container justify-content-center" style={{paddingTop: '350px'}}>
+    <div id='intro' className="container justify-content-center" style={{paddingTop: '250px'}}>
         <div className="row align-items-center">
             <div className="col text-center md-mx-5">
             <h1 style={{ fontSize: '50px', color: '#1A618B'}}>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
