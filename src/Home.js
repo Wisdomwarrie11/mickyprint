@@ -21,6 +21,12 @@ import logo from './logo.png'
 import line from './line.png'
 import Navbar from './Navbar';
 import Myform from './form';
+import About from './About.png'
+import hl from './hl.png'
+import tpaper from './tpaper.png'
+import rubber from './rubber.png'
+import ControlledCarousal from './carousal'
+
 
 const Home = () =>{
 
@@ -32,7 +38,7 @@ const Home = () =>{
     
 return(
     <>
-    <div className="container justify-content-center" style={{paddingTop: '150px'}}>
+    <div id='intro' className="container justify-content-center" style={{paddingTop: '350px'}}>
         <div className="row align-items-center">
             <div className="col text-center md-mx-5">
             <h1 style={{ fontSize: '50px', color: '#1A618B'}}>We promote <br />your brand <br /> with Stunning <br /><span><strong>Packaging</strong></span></h1>
@@ -44,15 +50,25 @@ return(
     </div>
 
     {/* ABOUT PAGE */}
-    <div className=" About container" style={{marginTop: '150px'}}>
+    <section id='About'>
+    <div  className=" container" style={{marginTop: '300px'}}>
+    <div className="row text-center d-md-block">
+                    <div  className="col">
+                        <img src={About} alt="" />
+                        <img className='px-3 fw-bold' src={hl} alt="" />
+
+                    </div>
+                </div>
         <div className="row">
             <div className="col-md-6 my-5 d-md-block">
+            
             <img className='img-fluid text-center' src={paper} alt="" />
             </div>
             <div className="col-md-6 col-md-text-center">
+                
             <strong><h1 className='fw-bold' style={{color:'#1A618B', paddingTop: '35px'}}>Packaging at it’s <br />Finest <br /></h1></strong>
                         <p style={{}}>
-                        "At Micky's Prints, we believe that packaging is not just a means 
+                        "At Micky Prints, we believe that packaging is not just a means 
                         to deliver products; it's an opportunity to make a lasting impression. 
                         With years of experience and a dedicated team of experts, 
                         we've perfected the art of packaging to ensure that every box, bag, 
@@ -72,7 +88,7 @@ return(
                         So, whether you're launching a new product, expanding your brand, 
                         or reimagining your packaging strategy, let Micky's Prints be your trusted 
                         partner on this exciting journey. 
-                        Welcome to Micky's Prints – where packaging meets perfection, 
+                        Welcome to Micky Prints – where packaging meets perfection, 
                         and dreams become reality."
                         </p>  
                         <div className="col-6 d-md-block">
@@ -82,6 +98,7 @@ return(
             </div>
         </div>
     </div>
+    </section>
     {/* WHAT WE DO */}
     <div className="container-fluid" style={{ backgroundColor: '#1A618B'}}>
         <div className="row" style={{paddingTop: '50px',color: 'white', paddingLeft: '20px', paddingBottom: '20px' }}>
@@ -110,7 +127,7 @@ return(
     <div className="container-fluid" style={{marginTop: '50px'}}>
         <div className="row">
             <div className="col">
-            <div id='product' className=" Our-product row text-center" style={{paddingTop: '5px'}}>
+            <div id='Product' className=" Our-product row text-center" style={{paddingTop: '5px'}}>
         <h2 className = 'fw-bold' style={{color: '#1A618B'}}>OUR RECENT PRODUCT</h2>
         </div>
             </div>
@@ -130,6 +147,11 @@ return(
         </div>
     </div>
 
+
+
+
+
+
     {/* OUR CUSTOMER */}
     <div className="container-fluid text-center" style={{marginTop: '150px'}}>
         <div className="row">
@@ -143,18 +165,17 @@ return(
     </div>
 
     {/* OUR CONTACT*/}
-  <div className=" Contact container-fluid" style={{marginTop: '50px' ,backgroundColor: '#EFDAD9'}}>
+  <div id='Contact' className=" Contact container-fluid" style={{marginTop: '50px' ,backgroundColor: '#EFDAD9'}}>
     <div className="row">
-        <div className="col-md-6 ">
-        <img style={{maxHeight: '550px', paddingLeft: '50px', marginTop: '20px'}} className='img-fluid mx-2 ' src={boy} alt="" />
+        <div className="col-md-6 d-none d-md-block ms-5 ps-5 pe-5 me-15">
+        <img style={{maxHeight: '600px', paddingLeft: '300px', marginTop: '20px', marginTop: '110px'}} className='img-fluid' src={boy} alt="" />
         </div>
-        <div className="col-md-3 justify-content-center" style={{paddingTop: '100px'}}>
-        <div className="fw-bold mx-2 text-align-center">
+        <div className="col-md-3 ms-5 ps-5 text-start " style={{paddingTop: '170px'}}>
+        <div className="fw-bold mx-2 ms-4">
                     <p style={{color: '#e51a49'}}>Contact Us</p>
                     <h2  className = 'fw-bold' style={{color: '#1A618B'}}>Let's talk business</h2>
                 </div>
             <Myform/>
-
         </div>
     </div>
   </div>

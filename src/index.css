@@ -7,11 +7,9 @@
 .navbar a{
   color:#F5168D;
   margin-right: 20px;
+  font-size:large;
 }
-.my-5 a {
-  color: #F5168D;
 
-}
 .socials a {
   padding-left: 15px;
 }

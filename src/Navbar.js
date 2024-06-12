@@ -7,7 +7,7 @@ const Navbar = () =>{
     return(
         <>
   
-    <nav class=" navbar fixed-top navbar-expand-md bg-light " style={{}}>
+    <nav class=" navbar fixed-top navbar-expand-md bg-light " style={{backgroundColor: '#edd3d3', padding: '20px'}}>
   <div class="container-xxl">
     <a class="navbar-brand" href="#intro">
         <img src={micky} alt="" />
@@ -21,16 +21,19 @@ const Navbar = () =>{
     {/* The links */}
     <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
      <div style={{paddingRight: '100px' }} className='links'>
-     <ul class="navbar-nav fw-bolder">
-        <li class="nav-item">
-        <Link style={{paddingRight: '50px', color: '#F5168D'}} to="About" spy={true} smooth={true} offset={-120} duration={1000}>About</Link>
+     <ul class="navbar-nav fw-bolder ">
+        <li class="nav-item" style={{paddingTop: '25px'}}>
+          <a style={{paddingRight: '50px', color: '#F5168D'}}href="#About">About</a>
+        {/* <Link style={{paddingRight: '50px', color: '#F5168D'}} to="About" spy={true} smooth={true} offset={-120} duration={1000}>About</Link> */}
         </li>
-        <li class="nav-item">
-        <Link  style={{paddingRight: '50px',paddingTop: '15px',color: '#F5168D'}}to="Our-product" spy={true} smooth={true} offset={-40} duration={500}>Our Product</Link>
+        <li class="nav-item" style={{paddingTop: '25px'}}>
+        {/* <Link  style={{paddingRight: '50px',paddingTop: '25px',color: '#F5168D'}}to="Our-product" spy={true} smooth={true} offset={-40} duration={500}>Our Product</Link> */}
+        <a style={{paddingRight: '50px', color: '#F5168D'}}href="#Product">Our Product</a>
 
         </li>
-        <li class="nav-item">
-        <Link style={{ paddingTop: '15px', color: '#F5168D'}} to="Contact" spy={true} smooth={true} offset={-120} duration={500}>Contact</Link>
+        <li class="nav-item" style={{paddingTop: '25px'}}>
+        {/* <Link style={{paddingTop: '25px', color: '#F5168D'}} to="Contact" spy={true} smooth={true} offset={-120} duration={500}>Contact</Link> */}
+        <a style={{paddingRight: '50px', color: '#F5168D'}}href="#Contact">Contact</a>
 
         </li>
       </ul>

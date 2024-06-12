@@ -84,7 +84,7 @@ const Myform =()=>{
             <div className="container">
            
                 <div className="">
-                    <div className="col-lg-6 justify-content-center">
+                    <div className="col-md-6 ">
                    
                         <form ref={form} onSubmit={sendEmail} action="">
                             <label style={{paddingBottom: '10px'}} for="Name" className="form-label fw-bold">Name</label>
