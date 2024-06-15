@@ -233,8 +233,8 @@ return(
     {/* OUR CONTACT*/}
   <div id='Contact' className=" Contact container-fluid" style={{marginTop: '50px' ,backgroundColor: '#EFDAD9'}}>
     <div className="row">
-        <div className="col-md-6 d-none d-md-block ms-5 ps-5 pe-5 me-15">
-        <img style={{maxHeight: '600px', paddingLeft: '300px', marginTop: '20px', marginTop: '110px'}} className='img-fluid' src={boy} alt="" />
+        <div className="col-md-6 d-none d-md-block ms-md-5 ps-md-5 pe-md-5 me-md-15">
+        <img style={{maxHeight: '600px'}} className='img-fluid' src={boy} alt="" />
         </div>
         <div className="col-md-3 ms-2 ps-2 text-start " style={{paddingTop: '70px'}}>
         <div className="fw-bold mx-2 ms-4">
