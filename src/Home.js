@@ -25,7 +25,8 @@ import About from './About.png'
 import hl from './hl.png'
 import tpaper from './tpaper.png'
 import rubber from './rubber.png'
-import ControlledCarousal from './carousal'
+import cylinder from './cylinder.png'
+import packet from './packets.png'
 
 
 const Home = () =>{
@@ -86,7 +87,7 @@ return(
                         expertise and resources to deliver beyond expectations.
                         <br />
                         So, whether you're launching a new product, expanding your brand, 
-                        or reimagining your packaging strategy, let Mickys Prints be your trusted 
+                        or reimagining your packaging strategy, let Micky Prints be your trusted 
                         partner on this exciting journey. 
                         Welcome to Micky Prints – where packaging meets perfection, 
                         and dreams become reality."
@@ -147,6 +148,71 @@ return(
         </div>
     </div>
 
+{/* <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+    <strong><h2 className = 'fw-bolder' >Stunning Packaging Design</h2></strong>
+                <p>Our stunning packaging design services are tailored to elevate your products and captivate <br />
+                consumers' attention. text-md-centerWe specialize in creating visually striking packaging that stands out on the <br /> 
+                shelves and leaves a lasting impression.</p>
+      <img src={Frame} class="d-block w-50 img-fluid justify-content-center" alt="..."/>
+    </div>
+    <div class="carousel-item text-md-center">
+    <strong><h2 className = 'fw-bolder' >Rubber Stereo Services</h2></strong>
+                <p>Our rubber stereos are essential tools for creating custom stamps, perfect for a variety of printing <br />
+                needs, including printing on nylons. These high-quality rubber pieces carry your unique design or text, <br />
+                 ensuring clear and precise impressions every time.</p>
+      <img style = {{}} src={rubber} class="d-block img-fluid w-50" alt="..."/>
+    </div>
+    <div class="carousel-item text-md-center " style={{backgroundColor: '#C3DBDB'}}>
+    <strong><h2 className = 'fw-bolder' >Printing Services for BOPP Material</h2></strong>
+                <p>Our BOPP packaging services offer versatile and high-quality packaging solutions for a wide range of <br />
+                 products. BOPP, or Biaxially Oriented Polypropylene, is a durable and versatile material known for its <br /> 
+                 clarity, strength, and moisture resistance. Our services ensure your unique design or text is printed <br />
+                 with crisp and accurate impressions on BOPP surfaces..</p>
+    
+      <img src={tpaper} class="d-block w-50" alt="..."/>
+    </div>
+    <div class="carousel-item text-md-center" style={{backgroundColor: '#EFDAD9'}} >
+    <strong><h2 className = 'fw-bolder' >Cylinder Mode Printing Services</h2></strong>
+                <p>Our cylinder mode printing services are designed for high-quality, precise printing on continuous rolls <br /> 
+                of material. This advanced method ensures your custom designs are reproduced with exceptional <br />
+                 clarity and consistency.</p>
+    
+      <img src={cylinder} class="d-block w-50" alt="..."/>
+    </div>
+    <div class="carousel-item text-md-center"style={{backgroundColor: ' #DEDEDE'}}>
+    <strong><h2 className = 'fw-bolder' >Laminate Printing Services</h2></strong>
+                <p>Our laminate packaging services offer high-quality packaging solutions for various products. Laminate <br />
+                packaging involves layering materials for enhanced protection, durability, and visual appeal.</p>
+    
+      <img src={packet} class="d-block w-50" alt="..."/>
+    </div> 
+    <div class="carousel-item text-md-center">
+    <strong><h2 className = 'fw-bolder' >LDPE Packaging Services</h2></strong>
+                <p>Our LDPE packaging services provide versatile and reliable packaging solutions for a wide range of <br />
+                products. LDPE, or Low-Density Polyethylene, is a flexible and lightweight material ideal for various <br /> packaging applications.</p>
+    
+      <img src={packet} class="d-block w-50" alt="..."/>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> */}
 
 
 
@@ -186,7 +252,7 @@ return(
         <div className="col-md-8">
         <ul>
             <img  src={logo} alt="logo" />
-                <p>contact us if you have any question based <br />on partnership, sponsorship. Please contact us at <br /> info@mickyprint.com</p>
+                <p>Contact us if you have any question based <br />on partnership, sponsorship. Please contact us at <br /> info@mickyprint.com</p>
             </ul>
            <div className='socials' style={{paddingLeft: '50px'}}>
            <a href=""><img src= {fb} alt="" /></a>
