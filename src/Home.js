@@ -27,6 +27,7 @@ import tpaper from './tpaper.png'
 import rubber from './rubber.png'
 import cylinder from './cylinder.png'
 import packet from './packets.png'
+import Carousal from './carousal'
 
 
 const Home = () =>{
@@ -136,7 +137,7 @@ return(
     </div>
 
     {/* PACKAGING DESING */}
-    <div className="container-fluid" style={{Width: '100%',marginTop: '50px', backgroundColor: '#C4C6DB', paddingTop: '10px'}}>
+    {/* <div className="container-fluid" style={{Width: '100%',marginTop: '50px', backgroundColor: '#C4C6DB', paddingTop: '10px'}}>
         <div className="row">
             <div className="col text-md-center py-5">
             <strong><h2 className = 'fw-bolder' >Stunning Packaging Design</h2></strong>
@@ -146,9 +147,78 @@ return(
         <div className="col text-center ">
             <img  className='img-fluid' style={{Width: '300px'}} src={Frame} alt="" />
         </div>
+    </div> */}
+
+    <Carousal/>
+
+
+
+    {/* OUR CUSTOMER */}
+    <div className="container-fluid text-center" style={{marginTop: '150px'}}>
+        <div className="row">
+            <div className="col">
+            <h2 className='fw-bold' style={{ fontSize: '40px'}}>Our Customers</h2>
+        <p>Providing for Nigeria’s packaging needs for many years has allowed <br />
+        us to gain the support of some truly wonderful customers.</p>
+            </div>
+            <img src={container} alt="" />
+        </div> 
     </div>
 
-{/* <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    {/* OUR CONTACT*/}
+  <div id='Contact' className=" Contact container-fluid" style={{marginTop: '50px' ,backgroundColor: '#EFDAD9'}}>
+    <div className="row">
+        <div className="col-md-6 d-none d-md-block ms-md-5 ps-md-5 pe-md-5 me-md-15">
+        <img style={{maxHeight: '600px'}} className='img-fluid' src={boy} alt="" />
+        </div>
+        <div className="col-md-3 ms-2 ps-2 text-start " style={{paddingTop: '70px'}}>
+        <div className="fw-bold mx-2 ms-4">
+                    <p style={{color: '#e51a49'}}>Contact Us</p>
+                    <h2  className = 'fw-bold' style={{color: '#1A618B'}}>Let's talk business</h2>
+                </div>
+            <Myform/>
+        </div>
+    </div>
+  </div>
+
+  {/* INFO */}
+  <div className="container-fluid" style={{ backgroundColor: '#1A618B', color: 'white', paddingTop: '20px', }}>
+  <div className="row">
+        <div className="col-md-8">
+        <ul>
+            <img  src={logo} alt="logo" />
+                <p>Contact us if you have any question based <br />on partnership, sponsorship. Please contact us at <br /> info@mickyprint.com</p>
+            </ul>
+           <div className='socials' style={{paddingLeft: '50px'}}>
+           <a href=""><img src= {fb} alt="" /></a>
+           <a href=""><img src= {insta} alt="" /></a>
+           <a href=""><img src={linkedin} alt="" /></a>
+           <a href=""><img src={yt} alt="" /></a>
+           <a href=""><img src={x} alt="" /></a>
+
+           </div>
+          
+        </div>
+        <div className='col-md-4 py-5 px-5'>
+            <h3>Contact Information</h3>
+            <p>Email info: info@mickyprints.com</p>
+            <p>Phone: 08082346361, 08138148024, 07036327048</p>
+            <p>Address: 22 Cameroon Road Aba, Abia State, Nigeria. </p>
+        </div>
+       </div>
+  </div>
+  <div className="container-fluid" style={{paddingTop: '10px', backgroundColor: '#F5168D', color: 'white'}}>
+        <div className="row">
+       <div className='col text-center'>
+            <p>copyright @{year.getFullYear()} Mickyprint All right Reserved. <span>Terms of Use. Privacy Policy</span></p>
+        </div>
+       </div>
+        </div>
+
+
+
+
+        {/* <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -214,71 +284,6 @@ return(
   </button>
 </div> */}
 
-
-
-
-
-    {/* OUR CUSTOMER */}
-    <div className="container-fluid text-center" style={{marginTop: '150px'}}>
-        <div className="row">
-            <div className="col">
-            <h2 className='fw-bold' style={{ fontSize: '40px'}}>Our Customers</h2>
-        <p>Providing for Nigeria’s packaging needs for many years has allowed <br />
-        us to gain the support of some truly wonderful customers.</p>
-            </div>
-            <img src={container} alt="" />
-        </div> 
-    </div>
-
-    {/* OUR CONTACT*/}
-  <div id='Contact' className=" Contact container-fluid" style={{marginTop: '50px' ,backgroundColor: '#EFDAD9'}}>
-    <div className="row">
-        <div className="col-md-6 d-none d-md-block ms-md-5 ps-md-5 pe-md-5 me-md-15">
-        <img style={{maxHeight: '600px'}} className='img-fluid' src={boy} alt="" />
-        </div>
-        <div className="col-md-3 ms-2 ps-2 text-start " style={{paddingTop: '70px'}}>
-        <div className="fw-bold mx-2 ms-4">
-                    <p style={{color: '#e51a49'}}>Contact Us</p>
-                    <h2  className = 'fw-bold' style={{color: '#1A618B'}}>Let's talk business</h2>
-                </div>
-            <Myform/>
-        </div>
-    </div>
-  </div>
-
-  {/* INFO */}
-  <div className="container-fluid" style={{ backgroundColor: '#1A618B', color: 'white', paddingTop: '20px', }}>
-  <div className="row">
-        <div className="col-md-8">
-        <ul>
-            <img  src={logo} alt="logo" />
-                <p>Contact us if you have any question based <br />on partnership, sponsorship. Please contact us at <br /> info@mickyprint.com</p>
-            </ul>
-           <div className='socials' style={{paddingLeft: '50px'}}>
-           <a href=""><img src= {fb} alt="" /></a>
-           <a href=""><img src= {insta} alt="" /></a>
-           <a href=""><img src={linkedin} alt="" /></a>
-           <a href=""><img src={yt} alt="" /></a>
-           <a href=""><img src={x} alt="" /></a>
-
-           </div>
-          
-        </div>
-        <div className='col-md-4 py-5 px-5'>
-            <h3>Contact Information</h3>
-            <p>Email info: info@mickyprints.com</p>
-            <p>Phone: 08082346361, 08138148024, 07036327048</p>
-            <p>Address: 22 Cameroon Road Aba, Abia State, Nigeria. </p>
-        </div>
-       </div>
-  </div>
-  <div className="container-fluid" style={{paddingTop: '10px', backgroundColor: '#F5168D', color: 'white'}}>
-        <div className="row">
-       <div className='col text-center'>
-            <p>copyright @{year.getFullYear()} Mickyprint All right Reserved. <span>Terms of Use. Privacy Policy</span></p>
-        </div>
-       </div>
-        </div>
     </>
 )
 
