@@ -13,7 +13,7 @@ import slide6 from './Slide6.png'
 const Carousal = () =>{
     return(
     <>
-  <div className="container-fluid">
+ 
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -41,7 +41,7 @@ const Carousal = () =>{
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-  </div>
+
     </>
     )
 };
