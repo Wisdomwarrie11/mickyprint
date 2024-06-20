@@ -36,8 +36,7 @@ const Carousal = () =>{
       <img src={car} class="d-md-none w-100" alt="..."/>
 
     </div>
-  </div>
-  <div class="carousel-item">
+    <div class="carousel-item">
       <img src={slide5} class="d-none d-md-block  w-100" alt="..."/>
       <img src={car4} class="d-md-none w-100" alt="..."/>
 
@@ -45,6 +44,8 @@ const Carousal = () =>{
     <div class="carousel-item">
       <img src={slide6} class="d-none d-md-block  w-100" alt="..."/>
       <img src={car5} class="d-md-none w-100" alt="..."/>
+  </div>
+ 
 
     </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
