@@ -8,7 +8,6 @@ import image from './Images.png';
 import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import boy from './image6.png';
-import pad from './pad.png';
 import Frame from './Frame.png';
 import container from './Container.png';
 import Frame1 from './Frame1.png';
@@ -23,10 +22,6 @@ import Navbar from './Navbar';
 import Myform from './form';
 import About from './About.png'
 import hl from './hl.png'
-import tpaper from './tpaper.png'
-import rubber from './rubber.png'
-import cylinder from './cylinder.png'
-import packet from './packets.png'
 import Carousal from './carousal'
 
 
