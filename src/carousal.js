@@ -12,7 +12,7 @@ import car2 from './car2.png'
 import car3 from './car3.png'
 import car4 from './car4.png'
 import car5 from './car5.png'
-import car6 from './car6.png'
+
 
 
 

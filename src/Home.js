@@ -9,7 +9,7 @@ import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import boy from './image6.png';
 import Frame from './Frame.png';
-import container from './Container.png';
+import customer from './customer.png'
 import Frame1 from './Frame1.png';
 import fb from './fb.png';
 import x from './x.png';
@@ -131,19 +131,6 @@ return(
         </div>
     </div>
 
-    {/* PACKAGING DESING */}
-    {/* <div className="container-fluid" style={{Width: '100%',marginTop: '50px', backgroundColor: '#C4C6DB', paddingTop: '10px'}}>
-        <div className="row">
-            <div className="col text-md-center py-5">
-            <strong><h2 className = 'fw-bolder' >Stunning Packaging Design</h2></strong>
-                <p>Our stunning packaging design services are tailored to elevate your products and captivate <br />consumers' attention. We specialize in creating visually striking packaging that stands out on the <br /> shelves and leaves a lasting impression.</p>  
-            </div>
-        </div>
-        <div className="col text-center ">
-            <img  className='img-fluid' style={{Width: '300px'}} src={Frame} alt="" />
-        </div>
-    </div> */}
-
     <Carousal/>
 
 
@@ -156,7 +143,7 @@ return(
         <p>Providing for Nigeria’s packaging needs for many years has allowed <br />
         us to gain the support of some truly wonderful customers.</p>
             </div>
-            <img src={container} alt="" />
+            <img src={customer} alt="" />
         </div> 
     </div>
 
@@ -164,10 +151,10 @@ return(
   <div id='Contact' className=" Contact container-fluid" style={{marginTop: '50px' ,backgroundColor: '#EFDAD9'}}>
     <div className="row">
         <div className="col-md-6 d-none d-md-block ms-md-5 ps-md-5 pe-md-5 me-md-15">
-        <img style={{maxHeight: '600px'}} className='img-fluid' src={boy} alt="" />
+        <img style={{maxHeight: '600px', marginTop: '100px'}} className='img-fluid' src={boy} alt="" />
         </div>
         <div className="col-md-3 ms-2 ps-2 text-start " style={{paddingTop: '70px'}}>
-        <div className="fw-bold mx-2 ms-4">
+        <div className="fw-bold mx-2">
                     <p style={{color: '#e51a49'}}>Contact Us</p>
                     <h2  className = 'fw-bold' style={{color: '#1A618B'}}>Let's talk business</h2>
                 </div>
@@ -209,75 +196,6 @@ return(
         </div>
        </div>
         </div>
-
-
-
-
-        {/* <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active ">
-    <strong><h2 className = 'fw-bolder' >Stunning Packaging Design</h2></strong>
-                <p>Our stunning packaging design services are tailored to elevate your products and captivate <br />
-                consumers' attention. text-md-centerWe specialize in creating visually striking packaging that stands out on the <br /> 
-                shelves and leaves a lasting impression.</p>
-      <img src={Frame} class="d-block w-50 img-fluid justify-content-center" alt="..."/>
-    </div>
-    <div class="carousel-item text-md-center">
-    <strong><h2 className = 'fw-bolder' >Rubber Stereo Services</h2></strong>
-                <p>Our rubber stereos are essential tools for creating custom stamps, perfect for a variety of printing <br />
-                needs, including printing on nylons. These high-quality rubber pieces carry your unique design or text, <br />
-                 ensuring clear and precise impressions every time.</p>
-      <img style = {{}} src={rubber} class="d-block img-fluid w-50" alt="..."/>
-    </div>
-    <div class="carousel-item text-md-center " style={{backgroundColor: '#C3DBDB'}}>
-    <strong><h2 className = 'fw-bolder' >Printing Services for BOPP Material</h2></strong>
-                <p>Our BOPP packaging services offer versatile and high-quality packaging solutions for a wide range of <br />
-                 products. BOPP, or Biaxially Oriented Polypropylene, is a durable and versatile material known for its <br /> 
-                 clarity, strength, and moisture resistance. Our services ensure your unique design or text is printed <br />
-                 with crisp and accurate impressions on BOPP surfaces..</p>
-    
-      <img src={tpaper} class="d-block w-50" alt="..."/>
-    </div>
-    <div class="carousel-item text-md-center" style={{backgroundColor: '#EFDAD9'}} >
-    <strong><h2 className = 'fw-bolder' >Cylinder Mode Printing Services</h2></strong>
-                <p>Our cylinder mode printing services are designed for high-quality, precise printing on continuous rolls <br /> 
-                of material. This advanced method ensures your custom designs are reproduced with exceptional <br />
-                 clarity and consistency.</p>
-    
-      <img src={cylinder} class="d-block w-50" alt="..."/>
-    </div>
-    <div class="carousel-item text-md-center"style={{backgroundColor: ' #DEDEDE'}}>
-    <strong><h2 className = 'fw-bolder' >Laminate Printing Services</h2></strong>
-                <p>Our laminate packaging services offer high-quality packaging solutions for various products. Laminate <br />
-                packaging involves layering materials for enhanced protection, durability, and visual appeal.</p>
-    
-      <img src={packet} class="d-block w-50" alt="..."/>
-    </div> 
-    <div class="carousel-item text-md-center">
-    <strong><h2 className = 'fw-bolder' >LDPE Packaging Services</h2></strong>
-                <p>Our LDPE packaging services provide versatile and reliable packaging solutions for a wide range of <br />
-                products. LDPE, or Low-Density Polyethylene, is a flexible and lightweight material ideal for various <br /> packaging applications.</p>
-    
-      <img src={packet} class="d-block w-50" alt="..."/>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div> */}
 
     </>
 )

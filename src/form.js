@@ -88,23 +88,23 @@ const Myform =()=>{
                    
                         <form ref={form} onSubmit={sendEmail} action="">
                             <label style={{paddingBottom: '10px'}} for="Name" className="form-label fw-bold">Name</label>
-                            <input style={{width: '300px', fontSize: '15px'}} type="text" value={names} 
+                            <input style={{width: '500px', height: '70px', fontSize: '15px'}} type="text" value={names} 
                             className="form-control" id="Name"  
                             required 
                             onChange={(e) => setNames(e.target.value)} 
                             placeholder="Your name" />
 
                             <label for="message" className="form-label fw-bold">Message</label>
-                            <textarea style={{width: '300px', height: '150px', fontSize: '15px', padding: '10px 10px'}} 
+                            <textarea style={{width: '500px', height: '150px', fontSize: '15px', padding: '10px 10px'}} 
                             onChange={(e) => setMessage(e.target.value)}
                              value={message} className="form-control" 
                              name="message" id="message"></textarea>
                         <div className="mb-4">
                             <button style={{borderRadius: '10px', cursor: 'pointer',
                             color: 'white',backgroundColor: '#1A618B', fontSize: '30px', 
-                            fontWeight: '500px', width: '300px', height: '85px', paddingBottom: '8px',
+                            fontWeight: '500px', width: '500px', height: '85px', paddingBottom: '8px',
                             marginTop: '20px'}} type="submit" className="btn mt-5 fw-bold">
-                                Join Us
+                                Send
                             </button>
                         </div>
                         </form>
