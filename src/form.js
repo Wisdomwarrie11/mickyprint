@@ -25,28 +25,28 @@ const Myform =()=>{
     return(
         <>
         <section id="contact">
-            <div className="container">
+            <div className="container-fluid">
            
                 <div className="">
                     <div className="col-md-6 ">
                    
                         <form ref={form} onSubmit={sendEmail} action="">
                             <label style={{paddingBottom: '10px'}} for="Name" className="form-label fw-bold">Name</label>
-                            <input style={{width: '450px', height: '70px', fontSize: '15px'}} type="text" value={names} 
-                            className="form-control" id="Name"  
+                            <input style={{width: '400px', height: '70px', fontSize: '15px'}} type="text" value={names} 
+                            className="form-control " id="Name"  
                             required 
                             onChange={(e) => setNames(e.target.value)} 
                             placeholder="Your name" />
 
                             <label for="message" className="form-label fw-bold">Message</label>
-                            <textarea style={{width: '450px', height: '150px', fontSize: '15px', padding: '10px 10px'}} 
+                            <textarea style={{width: '400px', height: '150px', fontSize: '15px', padding: '10px 10px'}} 
                             onChange={(e) => setMessage(e.target.value)}
                              value={message} className="form-control" 
                              name="message" id="message"></textarea>
                         <div className="mb-4">
                             <button style={{borderRadius: '10px', cursor: 'pointer',
                             color: 'white',backgroundColor: '#1A618B', fontSize: '30px', 
-                            fontWeight: '500px', width: '500px', height: '85px', paddingBottom: '8px',
+                            fontWeight: '500px', width: '400px', height: '85px', paddingBottom: '8px',
                             marginTop: '20px'}} type="submit" className="btn mt-5 fw-bold">
                                 Send
                             </button>
