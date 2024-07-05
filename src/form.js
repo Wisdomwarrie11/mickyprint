@@ -25,21 +25,21 @@ const Myform =()=>{
     return(
         <>
         <section id="contact">
-            <div className="container-fluid">
+            <div className="container">
            
                 <div className="">
                     <div className="col-md-6 ">
                    
                         <form ref={form} onSubmit={sendEmail} action="">
                             <label style={{paddingBottom: '10px'}} for="Name" className="form-label fw-bold">Name</label>
-                            <input style={{width: '400px', height: '70px', fontSize: '15px'}} type="text" value={names} 
+                            <input style={{width: '300px', height: '70px', fontSize: '15px'}} type="text" value={names} 
                             className="form-control " id="Name"  
                             required 
                             onChange={(e) => setNames(e.target.value)} 
                             placeholder="Your name" />
 
                             <label for="message" className="form-label fw-bold">Message</label>
-                            <textarea style={{width: '400px', height: '150px', fontSize: '15px', padding: '10px 10px'}} 
+                            <textarea style={{width: '300px', height: '150px', fontSize: '15px', padding: '10px 10px'}} 
                             onChange={(e) => setMessage(e.target.value)}
                              value={message} className="form-control" 
                              name="message" id="message"></textarea>
