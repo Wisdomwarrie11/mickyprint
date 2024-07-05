@@ -153,7 +153,7 @@ return(
         <div className="col-md-6 d-none d-md-block ms-md-5 ps-md-5 pe-md-5 me-md-15">
         <img style={{maxHeight: '600px', marginTop: '100px'}} className='img-fluid' src={boy} alt="" />
         </div>
-        <div className="col-md-3 ms-2 ps-2 text-start " style={{paddingTop: '70px'}}>
+        <div className="col-md-3 ms-2 ps-2 text-start " style={{paddingTop: '120px'}}>
         <div className="fw-bold mx-2">
                     <p style={{color: '#e51a49'}}>Contact Us</p>
                     <h2  className = 'fw-bold' style={{color: '#1A618B'}}>Let's talk business</h2>
@@ -172,7 +172,7 @@ return(
                 <p>Contact us if you have any question based <br />on partnership, sponsorship. Please contact us at <br /> info@mickyprint.com</p>
             </ul>
            <div className='socials' style={{paddingLeft: '50px'}}>
-           <a href=""><img src= {fb} alt="" /></a>
+           <a href="https://www.facebook.com/profile.php?id=61560047197235&mibextid=ZbWKwL"><img src= {fb} alt="" /></a>
            <a href=""><img src= {insta} alt="" /></a>
            <a href=""><img src={linkedin} alt="" /></a>
            <a href=""><img src={yt} alt="" /></a>
